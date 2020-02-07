@@ -17,9 +17,14 @@ public class ReadFile {
 
 	ContactBook cb = new ContactBook();
 
+	/**
+	 * Nadia H.
+	 * 
+	 * @return
+	 * @throws IOException
+	 */
 	public ContactBook readfile() throws IOException {
 		File file = new File("Contact cb");
-
 		FileReader fr = null;
 		{
 
@@ -49,17 +54,18 @@ public class ReadFile {
 				c.setCountry(falt[9]);
 				c.setComment(falt[10]);
 				c.setBirthday(null);
-				
+
 				cb.add(c);
 
 			}
+			br = new BufferedReader(fr);
 			try {
 				result = br.readLine();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			return cb;
 		}
+		return cb;
 	}
 }
