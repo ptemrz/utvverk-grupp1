@@ -6,12 +6,20 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+import domain.ContactBook;
+
 public class ReadFile {
 
-	public String readfile() {
+	public ContactBook readfile() {
 
-		File file = new File("...");
-		FileReader fr = null;
+	}
+
+	ContactBook cb = new ContactBook();
+
+	File file = new File("");
+	FileReader fr = null;
+	{
+
 		try {
 			fr = new FileReader(file);
 		} catch (FileNotFoundException e1) {
