@@ -7,7 +7,7 @@ import java.time.LocalDate;
  * @author ptemrz
  *
  */
-public class Contact {
+public class Contact implements Comparable<Contact>{
 	private String title, firstName, middleName, lastName;
 	private String number;
 	private String email;
@@ -159,5 +159,10 @@ public class Contact {
 				+ lastName + ", number=" + number + ", email=" + email + ", streetAdress=" + streetAdress + ", code="
 				+ code + ", city=" + city + ", country=" + country + ", comment=" + comment + ", birthday=" + birthday
 				+ "]";
+	}
+
+	@Override
+	public int compareTo(Contact o) {
+		return lastName.compareTo(o.getLastName());
 	}
 }
