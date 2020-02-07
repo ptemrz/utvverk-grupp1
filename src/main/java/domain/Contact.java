@@ -137,9 +137,19 @@ public class Contact {
 	}
 	
 	public String[] toStringArray() {
+		String bDay = "";
+		if(birthday != null) {
+			bDay = birthday.toString();
+		}
+		
 		String[] allFields = {title,firstName,middleName,
 							  lastName,number,email,streetAdress,
-							  code, city, country, comment, birthday.toString()};
+							  code, city, country, comment, bDay};
+		for(int i = 0; i < allFields.length; i++) {
+			if(allFields[i] == null) {
+				allFields[i] = "";
+			}
+		}
 		return allFields;
 	}
 	
