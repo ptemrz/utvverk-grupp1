@@ -10,7 +10,10 @@ import domain.ContactBook;
 
 public class WriteFile {
 	BufferedWriter bw = null;
-
+/**
+ * Nadia H.
+ * @param args
+ */
 	public static void main(String[] args) {
 		//ta bort
 		ContactBook cb = new ContactBook();
