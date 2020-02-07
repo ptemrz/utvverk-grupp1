@@ -1,5 +1,7 @@
 package io.test;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import java.io.File;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -24,7 +26,10 @@ public class WriteFileTest {
 
 	@Test
 	public void writeToFileTest() {
-		File file = new File("Contact cb");
+		File f = new File("testfile");
+		f.delete();
+		WriteFile.writeToFile(cb, "testfile");
+		assertTrue(f.exists());
 
 	}
 }
