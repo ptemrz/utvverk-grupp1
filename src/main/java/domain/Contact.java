@@ -168,4 +168,9 @@ public class Contact implements Comparable<Contact>{
 	public int compareTo(Contact o) {
 		return lastName.compareTo(o.getLastName());
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		return super.equals(o);
+	}
 }

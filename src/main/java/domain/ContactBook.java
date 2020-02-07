@@ -56,4 +56,25 @@ public class ContactBook extends LinkedList<Contact> {
 		}
 		return sb.toString();
 	}
+
+	@Override
+	public boolean equals(Object o) {
+		
+		if(! (o instanceof ContactBook)) {
+			return false;
+		}
+		ContactBook c = (ContactBook) o;
+		
+		if(c.size() != this.size()) {
+			return false;
+		}
+		
+		for(int i = 0; i < size(); i++) {
+			if(!c.get(i).equals(c.get(i))) {
+				return false;
+			}
+		}
+		
+		return true;
+	}
 }
