@@ -17,6 +17,7 @@ import javax.swing.JTextField;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.border.EtchedBorder;
 import javax.swing.border.TitledBorder;
+import domain.*;
 
 /**
  * 
@@ -32,6 +33,15 @@ public class GUI extends JFrame implements ActionListener {
 	// private JLabel infoL = new JLabel("Skriv text i blå rutan och klicka den
 	// lämpliga knappen", JLabel.CENTER);
 	private JButton listaB = new JButton("Lista");
+	
+	public JTextArea getResultatTA() {
+		return resultatTA;
+	}
+
+	public void setResultatTA(JTextArea resultatTA) {
+		this.resultatTA = resultatTA;
+	}
+
 	private JButton sökB = new JButton("Sök");
 	private JButton läggB = new JButton("Lägg");
 	private JButton taBortB = new JButton("Ta bort");
@@ -80,7 +90,8 @@ public class GUI extends JFrame implements ActionListener {
 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLayout(new GridLayout(3, 1));
-		frame.pack();
+		//frame.pack();
+		frame.setSize(500,700);
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
 
@@ -93,9 +104,21 @@ public class GUI extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-
+		
+	
+		ContactBook cb=new ContactBook();
+		Contact c = new Contact("Adam");
+//		c.setLastName("fggfegf");
+//		c.setCity("rrr");
+//		cb.add(c);
+		
+ 
 		if (e.getSource() == listaB) {
-			// metod1
+			{
+				resultatTA.setText(cb.toString());
+				
+			}
+		
 		}
 
 		if (e.getSource() == sökB) {
