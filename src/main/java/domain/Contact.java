@@ -161,6 +161,9 @@ public class Contact implements Comparable<Contact>{
 				+ "]";
 	}
 
+	/**
+	 * Compare last names lexicographically
+	 */
 	@Override
 	public int compareTo(Contact o) {
 		return lastName.compareTo(o.getLastName());
