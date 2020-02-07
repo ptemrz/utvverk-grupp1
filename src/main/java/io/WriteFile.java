@@ -15,32 +15,34 @@ public class WriteFile {
 		ContactBook cb = new ContactBook();
 		cb.add(new Contact("Adam"));
 		cb.add(new Contact("Bertil"));
-		writeToFile(cb);
-	}
-	
-	public static void writeToFile(ContactBook cb) {
-		
-		File file = new File("Contact cb");
-		for(Contact lines: cb) {
-			for(String s : lines.toStringArray()) {
-				System.out.println(s);
-			}
+		//writeToFile(cb);
+		for(Contact c : cb) {
+			System.out.println(c);
 		}
 	}
 
-	{
+	public static void writeToFile(ContactBook cb) {
+		BufferedWriter bw = null;
+		File file = new File("Contact cb");
 
 		try {
 			String mycontent = "This String would be written" + " to the specified File";
 			// Specify the file name and path here
-			File file = new File("(...)");
-
 			/*
 			 * This logic will make sure that the file gets created if it is not present at
 			 * the specified location
 			 */
 			if (!file.exists()) {
 				file.createNewFile();
+			}
+
+			for (Contact lines : cb) {
+				String s = (lines.getTitle() + lines.getFirstName() + lines.getMiddleName() 
+				+ lines.getLastName() + lines.getEmail() + lines.getStreetAdress() + lines.getCode()
+				+ lines.getCity() + lines.getCountry() + lines.getComment() + lines.getBirthday());
+				
+				System.out.println(s);
+				
 			}
 
 			FileWriter fw = new FileWriter(file);
