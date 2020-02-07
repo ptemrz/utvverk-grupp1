@@ -18,21 +18,21 @@ public class ContactBook extends LinkedList<Contact> {
 	/**
 	 * 
 	 * @param searchString the string to find
-	 * @return List of all contacts that match the searchString
+	 * @return A new contact book with contacts that match the searchString
 	 */
-	public List<Contact> find(String searchString) {
-		List<Contact> contacts = new ArrayList<>();
+	public ContactBook find(String searchString) {
+		ContactBook foundContacts = new ContactBook();
 
 		for (Contact c : this) {
 			for (String s : c.toStringArray()) {
 				if (s.equalsIgnoreCase(searchString) || s.contains(searchString)) {
-					contacts.add(c);
+					foundContacts.add(c);
 					break;
 				}
 			}
 		}
 
-		return contacts;
+		return foundContacts;
 	}
 	
 	public void remove(String indexedRow) {
