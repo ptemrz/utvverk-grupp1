@@ -12,13 +12,12 @@ public class WriteFile {
 	BufferedWriter bw = null;
 
 	public static void main(String[] args) {
+		//ta bort
 		ContactBook cb = new ContactBook();
 		cb.add(new Contact("Adam"));
 		cb.add(new Contact("Bertil"));
-		//writeToFile(cb);
-		for(Contact c : cb) {
-			System.out.println(c);
-		}
+		writeToFile(cb);
+		
 	}
 
 	public static void writeToFile(ContactBook cb) {

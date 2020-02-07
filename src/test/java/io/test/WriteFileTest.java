@@ -1,5 +1,7 @@
 package io.test;
 
+import java.io.File;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -22,7 +24,7 @@ public class WriteFileTest {
 
 	@Test
 	public void writeToFileTest() {
-		
+		File file = new File("Contact cb");
 
 	}
 }
