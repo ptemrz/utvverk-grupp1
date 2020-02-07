@@ -119,8 +119,8 @@ public class GUI extends JFrame implements ActionListener {
 		if (e.getSource() == sökB) {
 			
 			//resultatTA.setText(cb.find(skrivInTF.getText()).toString());
-						
-			if(skrivInTF.getText()==cb.find(skrivInTF.getText()).toString())
+			String input = skrivInTF.getText();			
+			if(!cb.find(input).toString().equals(""))
 				resultatTA.setText(cb.find(skrivInTF.getText()).toString());
 			else
 				resultatTA.setText("Där finns inte "+skrivInTF.getText());
