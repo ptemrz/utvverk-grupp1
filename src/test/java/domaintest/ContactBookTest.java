@@ -16,9 +16,7 @@ public class ContactBookTest {
 	@BeforeEach
 	public void init() {
 		cb = new ContactBook();
-
-
-		
+		Contact c = new Contact();
 		cb.add(new Contact("Adam"));
 		cb.add(new Contact("Bertil"));
 		cb.add(new Contact("Caesar"));
