@@ -23,12 +23,21 @@ public class Contact {
 		this.firstName = firstName;
 	}
 	
-	@Override
-	public String toString() {
-		return "Contact [title=" + title + ", firstName=" + firstName + ", middleName=" + middleName + ", lastName="
-				+ lastName + ", number=" + number + ", email=" + email + ", streetAdress=" + streetAdress + ", code="
-				+ code + ", city=" + city + ", country=" + country + ", comment=" + comment + ", birthday=" + birthday
-				+ "]";
+	public Contact(String title, String firstName, String middleName, String lastName, String number, String email,
+			String streetAdress, String code, String city, String country, String comment, LocalDate birthday) {
+		super();
+		this.title = title;
+		this.firstName = firstName;
+		this.middleName = middleName;
+		this.lastName = lastName;
+		this.number = number;
+		this.email = email;
+		this.streetAdress = streetAdress;
+		this.code = code;
+		this.city = city;
+		this.country = country;
+		this.comment = comment;
+		this.birthday = birthday;
 	}
 
 	public String getTitle() {
@@ -126,21 +135,19 @@ public class Contact {
 	public void setBirthday(LocalDate birthday) {
 		this.birthday = birthday;
 	}
-
-	public Contact(String title, String firstName, String middleName, String lastName, String number, String email,
-			String streetAdress, String code, String city, String country, String comment, LocalDate birthday) {
-		super();
-		this.title = title;
-		this.firstName = firstName;
-		this.middleName = middleName;
-		this.lastName = lastName;
-		this.number = number;
-		this.email = email;
-		this.streetAdress = streetAdress;
-		this.code = code;
-		this.city = city;
-		this.country = country;
-		this.comment = comment;
-		this.birthday = birthday;
+	
+	public String[] toStringArray() {
+		String[] allFields = {title,firstName,middleName,
+							  lastName,number,email,streetAdress,
+							  code, city, country, comment, birthday.toString()};
+		return allFields;
+	}
+	
+	@Override
+	public String toString() {
+		return "Contact [title=" + title + ", firstName=" + firstName + ", middleName=" + middleName + ", lastName="
+				+ lastName + ", number=" + number + ", email=" + email + ", streetAdress=" + streetAdress + ", code="
+				+ code + ", city=" + city + ", country=" + country + ", comment=" + comment + ", birthday=" + birthday
+				+ "]";
 	}
 }
