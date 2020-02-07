@@ -37,6 +37,7 @@ public class ContactBook extends LinkedList<Contact> {
 	
 	public void remove(String indexedRow) {
 		Scanner s = new Scanner(indexedRow);
+		s.useDelimiter(":");
 		int i = s.nextInt();
 		s.close();
 		this.remove(i);
