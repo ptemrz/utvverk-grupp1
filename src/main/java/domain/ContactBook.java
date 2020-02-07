@@ -33,4 +33,16 @@ public class ContactBook extends LinkedList<Contact> {
 
 		return contacts;
 	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		for(Contact c : this) {
+			for (String field : c.toStringArray()) {
+				sb.append(field+" ");
+			}
+			sb.append("\n");
+		}
+		return sb.toString();
+	}
 }
