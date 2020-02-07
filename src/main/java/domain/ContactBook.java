@@ -37,7 +37,9 @@ public class ContactBook extends LinkedList<Contact> {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
+		
 		for(Contact c : this) {
+			sb.append(this.indexOf(c)+": ");
 			for (String field : c.toStringArray()) {
 				sb.append(field+" ");
 			}
