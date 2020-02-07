@@ -33,14 +33,8 @@ public class GUI extends JFrame implements ActionListener {
 	// private JLabel infoL = new JLabel("Skriv text i blå rutan och klicka den
 	// lämpliga knappen", JLabel.CENTER);
 	private JButton listaB = new JButton("Lista");
-	
-	public JTextArea getResultatTA() {
-		return resultatTA;
-	}
 
-	public void setResultatTA(JTextArea resultatTA) {
-		this.resultatTA = resultatTA;
-	}
+
 
 	private JButton sökB = new JButton("Sök");
 	private JButton läggB = new JButton("Lägg");
@@ -90,8 +84,8 @@ public class GUI extends JFrame implements ActionListener {
 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLayout(new GridLayout(3, 1));
-		//frame.pack();
-		frame.setSize(500,700);
+		// frame.pack();
+		frame.setSize(500, 700);
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
 
@@ -101,24 +95,25 @@ public class GUI extends JFrame implements ActionListener {
 		taBortB.addActionListener(this);
 
 	}
+	
+	
+	public JTextArea getResultatTA() {
+		return resultatTA;
+	}
+
+	public void setResultatTA(JTextArea resultatTA) {
+		this.resultatTA = resultatTA;
+	}
+
+	ContactBook cb = new ContactBook();
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		
-	
-		ContactBook cb=new ContactBook();
-		Contact c = new Contact("Adam");
-//		c.setLastName("fggfegf");
-//		c.setCity("rrr");
-//		cb.add(c);
-		
- 
+
 		if (e.getSource() == listaB) {
 			{
 				resultatTA.setText(cb.toString());
-				
 			}
-		
 		}
 
 		if (e.getSource() == sökB) {
@@ -126,11 +121,20 @@ public class GUI extends JFrame implements ActionListener {
 		}
 
 		if (e.getSource() == läggB) {
-			// metod3
+
+			Contact nyCon = new Contact();
+			nyCon.setFirstName(skrivInTF.getText());
+			cb.add(nyCon);
 		}
 
 		if (e.getSource() == taBortB) {
-			// metod3
+//			String taBort = resultatTA.getSelectedText();
+//			String allt = resultatTA.getText();
+//			allt = allt.replaceAll(taBort, "");
+			cb.remove(resultatTA.getSelectedText());
+			resultatTA.setText(cb.toString());
+			
+
 		}
 
 	}
