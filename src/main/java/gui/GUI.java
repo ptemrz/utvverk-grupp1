@@ -117,7 +117,13 @@ public class GUI extends JFrame implements ActionListener {
 		}
 
 		if (e.getSource() == sökB) {
-			// metod2
+			
+			//resultatTA.setText(cb.find(skrivInTF.getText()).toString());
+						
+			if(skrivInTF.getText()==cb.find(skrivInTF.getText()).toString())
+				resultatTA.setText(cb.find(skrivInTF.getText()).toString());
+			else
+				resultatTA.setText("Där finns inte "+skrivInTF.getText());
 		}
 
 		if (e.getSource() == läggB) {
@@ -128,11 +134,10 @@ public class GUI extends JFrame implements ActionListener {
 		}
 
 		if (e.getSource() == taBortB) {
-//			String taBort = resultatTA.getSelectedText();
-//			String allt = resultatTA.getText();
-//			allt = allt.replaceAll(taBort, "");
+
 			cb.remove(resultatTA.getSelectedText());
-			resultatTA.setText(cb.toString());
+			
+	
 			
 
 		}
