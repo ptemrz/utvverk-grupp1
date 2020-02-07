@@ -4,7 +4,6 @@ import java.time.LocalDate;
 
 /**
  * Contact POJO
- * TODO getters, setters, toString, constructors
  * @author ptemrz
  *
  */
@@ -15,6 +14,10 @@ public class Contact {
 	private String streetAdress, code, city, country;
 	private String comment;
 	private LocalDate birthday;
+	
+	public Contact() {
+		
+	}
 	
 	public Contact(String firstName) {
 		this.firstName = firstName;
