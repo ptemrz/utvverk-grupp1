@@ -4,11 +4,25 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.net.URL;
 
-public class WriteFileDemo {
-	public static void main(String[] args) {
-		BufferedWriter bw = null;
+import domain.Contact;
+import domain.ContactBook;
+
+public class WriteFile {
+	BufferedWriter bw = null;
+
+	public static void writeToFile(ContactBook cb) {
+		
+		File file = new File("Contact cb");
+		for(Contact lines: cb) {
+			for(String s : lines.toStringArray()) {
+				System.out.println(s);
+			}
+		}
+	}
+
+	{
+
 		try {
 			String mycontent = "This String would be written" + " to the specified File";
 			// Specify the file name and path here
