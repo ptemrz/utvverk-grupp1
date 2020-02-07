@@ -3,6 +3,7 @@ package domain;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Right now a contact book is the same thing as a linked list of contacts
@@ -32,6 +33,13 @@ public class ContactBook extends LinkedList<Contact> {
 		}
 
 		return contacts;
+	}
+	
+	public void remove(String indexedRow) {
+		Scanner s = new Scanner(indexedRow);
+		int i = s.nextInt();
+		s.close();
+		this.remove(i);
 	}
 	
 	@Override
