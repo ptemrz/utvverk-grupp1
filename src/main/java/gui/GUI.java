@@ -34,7 +34,13 @@ public class GUI extends JFrame implements ActionListener {
 	// lämpliga knappen", JLabel.CENTER);
 	private JButton listaB = new JButton("Lista");
 
+	public JButton getListaB() {
+		return listaB;
+	}
 
+	public void setListaB(JButton listaB) {
+		this.listaB = listaB;
+	}
 
 	private JButton sökB = new JButton("Sök");
 	private JButton läggB = new JButton("Lägg");
@@ -95,8 +101,15 @@ public class GUI extends JFrame implements ActionListener {
 		taBortB.addActionListener(this);
 
 	}
-	
-	
+
+	public JButton getLäggB() {
+		return läggB;
+	}
+
+	public void setLäggB(JButton läggB) {
+		this.läggB = läggB;
+	}
+
 	public JTextArea getResultatTA() {
 		return resultatTA;
 	}
@@ -117,13 +130,13 @@ public class GUI extends JFrame implements ActionListener {
 		}
 
 		if (e.getSource() == sökB) {
-			
-			//resultatTA.setText(cb.find(skrivInTF.getText()).toString());
-			String input = skrivInTF.getText();			
-			if(!cb.find(input).toString().equals(""))
+
+			// resultatTA.setText(cb.find(skrivInTF.getText()).toString());
+			String input = skrivInTF.getText();
+			if (!cb.find(input).toString().equals(""))
 				resultatTA.setText(cb.find(skrivInTF.getText()).toString());
 			else
-				resultatTA.setText("Där finns inte "+skrivInTF.getText());
+				resultatTA.setText("Där finns inte " + skrivInTF.getText());
 		}
 
 		if (e.getSource() == läggB) {
@@ -136,12 +149,33 @@ public class GUI extends JFrame implements ActionListener {
 		if (e.getSource() == taBortB) {
 
 			cb.remove(resultatTA.getSelectedText());
-			
-	
-			
 
 		}
 
+	}
+
+	public JButton getSökB() {
+		return sökB;
+	}
+
+	public void setSökB(JButton sökB) {
+		this.sökB = sökB;
+	}
+
+	public JButton getTaBortB() {
+		return taBortB;
+	}
+
+	public void setTaBortB(JButton taBortB) {
+		this.taBortB = taBortB;
+	}
+
+	public JTextField getSkrivInTF() {
+		return skrivInTF;
+	}
+
+	public void setSkrivInTF(JTextField skrivInTF) {
+		this.skrivInTF = skrivInTF;
 	}
 
 }
