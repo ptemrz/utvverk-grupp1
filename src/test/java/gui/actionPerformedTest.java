@@ -2,7 +2,11 @@ package gui;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
-
+/**
+ * 
+ * @author danijela
+ *
+ */
 
 
 public class actionPerformedTest {
