@@ -20,9 +20,22 @@ import javax.swing.border.TitledBorder;
 import domain.*;
 
 /**
- * 
- * @author danijela
+ *@author danijela 
+ * här vi bygger vår Swing application
  *
+ *
+ * på grund av vilken knapp trycker man, får vi olika action
+ * -om man klicka på knappen "list" får man kontakt som finns i kontaktboken om där finns en.
+ * 
+ * Om man vill leta efter, ta bort eller lägga till en kontakt i boken behöver man först att
+ * skriva uppgifter i textFild och efter klicka på lämpliga knappen
+ * - om man klicka på knappen "sök" kan man letar efter kontakt i kontaktboken. 
+ * Om kontakt finns inte i boken får man meddelande att där finns inte denna kontakt.
+ * -om man klicka på knappen "Lägga till" jan man addera kontakt i kontaktboken, samt om
+ * man klicka po knappen "ta bort" kan man radera kontakt from kontaktboken. För att se resultat behöver
+ * man att klicka knappen "lista" en gång till.
+ * 
+ * Alla resultater ser man i textArea som har horisontell och vertikal scroll
  */
 
 public class GUI extends JFrame implements ActionListener {
@@ -34,13 +47,6 @@ public class GUI extends JFrame implements ActionListener {
 	// lämpliga knappen", JLabel.CENTER);
 	private JButton listaB = new JButton("Lista");
 
-	public JButton getListaB() {
-		return listaB;
-	}
-
-	public void setListaB(JButton listaB) {
-		this.listaB = listaB;
-	}
 
 	private JButton sökB = new JButton("Sök");
 	private JButton läggB = new JButton("Lägg");
@@ -91,7 +97,7 @@ public class GUI extends JFrame implements ActionListener {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLayout(new GridLayout(3, 1));
 		// frame.pack();
-		frame.setSize(500, 700);
+		frame.setSize(500, 650);
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
 
@@ -103,10 +109,16 @@ public class GUI extends JFrame implements ActionListener {
 	}
 
 
+
 	ContactBook cb = new ContactBook();
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		
+		/**
+		 * när man klicka på knappen "Lista" ligger innehåll från kontaktboken till
+		 * JTextArea 
+		 */
 
 		if (e.getSource() == listaB) {
 			{
@@ -114,9 +126,15 @@ public class GUI extends JFrame implements ActionListener {
 			}
 		}
 
+		/**
+		 * kontakt som vill man leta efter i kontaktboken först behöver man att
+		 * skriva i JTextFiled och sen klicka på knappen "sök" .Om kontakt finns i kontaktboken resultatet är skriven
+		 * iJTextArea, men om där finns inte kontakten i boken får man meddelande om där finns inte denna kontakt.
+		 *  
+		 */
 		if (e.getSource() == sökB) {
 
-			// resultatTA.setText(cb.find(skrivInTF.getText()).toString());
+			
 			String input = skrivInTF.getText();
 			if (!cb.find(input).toString().equals(""))
 				resultatTA.setText(cb.find(skrivInTF.getText()).toString());
@@ -124,6 +142,11 @@ public class GUI extends JFrame implements ActionListener {
 				resultatTA.setText("Där finns inte " + skrivInTF.getText());
 		}
 
+		/**
+		 * Om man vill att lägga till en nya kontakt i boken behöver man att skriva denna nya kontakt i JTextFiled och
+		 * sen klicka på knappen "Lägga till". Om man vill se resultat behöver man att klicka knappen "lista" och man kan se
+		 * i JTextArea alla kontakter som finns i boken. Den nya kontakten finns också där.
+		 */
 		if (e.getSource() == läggB) {
 
 			Contact nyCon = new Contact();
@@ -131,6 +154,11 @@ public class GUI extends JFrame implements ActionListener {
 			cb.add(nyCon);
 		}
 
+		/**
+		 * Om man vill att ta bort en kontakt fron boken behöver man först att skriva denna kontakt i JTextFiled och
+		 * sen klicka på knappen "ta bort". Om man vill se resultat behöver man att klicka knappen "lista" och man kan se
+		 * i JTextArea alla kontakter som finns i boken. Denna kontakten som man vill ta bort finns inte längre i kontaktboken.
+		 */
 		if (e.getSource() == taBortB) {
 
 			cb.remove(resultatTA.getSelectedText());
@@ -139,6 +167,14 @@ public class GUI extends JFrame implements ActionListener {
 
 	}
 
+
+	public JButton getListaB() {
+		return listaB;
+	}
+
+	public void setListaB(JButton listaB) {
+		this.listaB = listaB;
+	}
 	public JButton getSökB() {
 		return sökB;
 	}
