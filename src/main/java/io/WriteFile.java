@@ -10,22 +10,28 @@ import domain.ContactBook;
 
 public class WriteFile {
 	BufferedWriter bw = null;
-/**
- * Nadia H.
- * @param args
- */
+
+	/**
+	 * Nadia H.
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
-		//ta bort
+		// ta bort
 		ContactBook cb = new ContactBook();
 		cb.add(new Contact("Adam"));
 		cb.add(new Contact("Bertil"));
 		writeToFile(cb);
-		
+
 	}
 
 	public static void writeToFile(ContactBook cb) {
+		writeToFile(cb, "Contact cb");
+	}
+
+	public static void writeToFile(ContactBook cb, String fileName) {
 		BufferedWriter bw = null;
-		File file = new File("Contact cb");
+		File file = new File(fileName);
 
 		try {
 			String mycontent = "This String would be written" + " to the specified File";
@@ -39,12 +45,13 @@ public class WriteFile {
 			}
 
 			for (Contact lines : cb) {
-				String s = (lines.getTitle() + lines.getFirstName() + lines.getMiddleName() 
-				+ lines.getLastName() + lines.getEmail() + lines.getStreetAdress() + lines.getCode()
-				+ lines.getCity() + lines.getCountry() + lines.getComment() + lines.getBirthday());
-				
+				String s = String.format(lines.getTitle() + ", \n" + lines.getFirstName() + ", \n"
+						+ lines.getMiddleName() + ", \n" + lines.getLastName() + ", \n" + lines.getEmail() + ", \n"
+						+ lines.getStreetAdress() + ", \n" + lines.getCode() + ", \n" + lines.getCity() + ", \n"
+						+ lines.getCountry() + ", \n" + lines.getComment() + ", \n" + lines.getBirthday());
+
 				System.out.println(s);
-				
+
 			}
 
 			FileWriter fw = new FileWriter(file);
