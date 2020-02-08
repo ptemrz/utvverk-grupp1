@@ -102,21 +102,6 @@ public class GUI extends JFrame implements ActionListener {
 
 	}
 
-	public JButton getLäggB() {
-		return läggB;
-	}
-
-	public void setLäggB(JButton läggB) {
-		this.läggB = läggB;
-	}
-
-	public JTextArea getResultatTA() {
-		return resultatTA;
-	}
-
-	public void setResultatTA(JTextArea resultatTA) {
-		this.resultatTA = resultatTA;
-	}
 
 	ContactBook cb = new ContactBook();
 
@@ -177,5 +162,22 @@ public class GUI extends JFrame implements ActionListener {
 	public void setSkrivInTF(JTextField skrivInTF) {
 		this.skrivInTF = skrivInTF;
 	}
+	
+	public JButton getLäggB() {
+		return läggB;
+	}
+
+	public void setLäggB(JButton läggB) {
+		this.läggB = läggB;
+	}
+
+	public JTextArea getResultatTA() {
+		return resultatTA;
+	}
+
+	public void setResultatTA(JTextArea resultatTA) {
+		this.resultatTA = resultatTA;
+	}
+
 
 }
