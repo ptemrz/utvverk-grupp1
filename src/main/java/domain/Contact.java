@@ -4,25 +4,26 @@ import java.time.LocalDate;
 
 /**
  * Contact POJO
+ * 
  * @author ptemrz
  *
  */
-public class Contact implements Comparable<Contact>{
+public class Contact implements Comparable<Contact> {
 	private String title, firstName, middleName, lastName;
 	private String number;
 	private String email;
 	private String streetAdress, code, city, country;
 	private String comment;
 	private LocalDate birthday;
-	
+
 	public Contact() {
-		
+
 	}
-	
+
 	public Contact(String firstName) {
 		this.firstName = firstName;
 	}
-	
+
 	public Contact(String title, String firstName, String middleName, String lastName, String number, String email,
 			String streetAdress, String code, String city, String country, String comment, LocalDate birthday) {
 		super();
@@ -135,24 +136,23 @@ public class Contact implements Comparable<Contact>{
 	public void setBirthday(LocalDate birthday) {
 		this.birthday = birthday;
 	}
-	
+
 	public String[] toStringArray() {
 		String bDay = "";
-		if(birthday != null) {
+		if (birthday != null) {
 			bDay = birthday.toString();
 		}
-		
-		String[] allFields = {title,firstName,middleName,
-							  lastName,number,email,streetAdress,
-							  code, city, country, comment, bDay};
-		for(int i = 0; i < allFields.length; i++) {
-			if(allFields[i] == null) {
+
+		String[] allFields = { title, firstName, middleName, lastName, number, email, streetAdress, code, city, country,
+				comment, bDay };
+		for (int i = 0; i < allFields.length; i++) {
+			if (allFields[i] == null) {
 				allFields[i] = "";
 			}
 		}
 		return allFields;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Contact [title=" + title + ", firstName=" + firstName + ", middleName=" + middleName + ", lastName="
@@ -168,7 +168,7 @@ public class Contact implements Comparable<Contact>{
 	public int compareTo(Contact o) {
 		return lastName.compareTo(o.getLastName());
 	}
-	
+
 	@Override
 	public boolean equals(Object o) {
 		return super.equals(o);
