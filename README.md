@@ -5,20 +5,20 @@ author danijela
  här vi bygger vår Swing application
  
  
-  på grund av vilken knapp trycker man, får vi olika action
+  Beroende på grund vilken knapp man trycker på, sker olika händelser.
  
- -Om man klicka på knappen "list" får man kontakt som finns i kontaktboken om där finns en.
+ -Om man klickar på knappen "list" visas alla kontakter som finns i kontaktboken.
  
  Om man vill leta efter, ta bort eller lägga till en kontakt i boken behöver man först att
- skriva uppgifter i textFild och efter klicka på lämpliga knappen
+ skriva uppgifter i textField och efteråt klicka på en lämplig knapp.
  
- -Om man klicka på knappen "sök" kan man letar efter kontakt i kontaktboken. 
- Om kontakt finns inte i boken får man meddelande att där finns inte denna kontakt.
+ -Om man klickar på knappen "sök" kan man leta efter kontakter i kontaktboken. 
+ Om kontakten inte finns i boken visas ett felmeddelande.
  
- -Om man klicka på knappen "Lägga till" addera man kontakt i kontaktboken, samt om
- man klicka po knappen "ta bort" kan man radera kontakt from kontaktboken. Naturligtvis behöver man först 
- att markera kontakt i JTextArea som man vill att radera.Det gör man så man select rad med kursor
- För att se resultat behöver * man att klicka knappen "lista" en gång till.
+ -Om man klickar på knappen "Lägga till" lägger man till en kontakt i kontaktboken, samt om
+ man klicka på knappen "ta bort" kan man radera kontakt från kontaktboken. Naturligtvis behöver man först 
+ markera kontakten som man vill radera i JTextArea. Det gör man genom att markera raden med muspekaren.
+ För att se resultatet behöver man att klicka knappen "lista" en gång till.
  
- Alla resultater ser man i textArea som har horisontell och vertikal scroll
+ Alla resultat ser man i textArea som har horisontell och vertikal scroll.
  
