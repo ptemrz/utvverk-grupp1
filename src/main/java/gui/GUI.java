@@ -117,7 +117,7 @@ public class GUI extends JFrame implements ActionListener {
 		 * kontakt som vill man leta efter i kontaktboken först behöver man att
 		 * skriva i JTextFiled och sen klicka på knappen "sök" .Om kontakt finns i kontaktboken resultatet är skriven
 		 * iJTextArea, men om där finns inte kontakten i boken får man meddelande om där finns inte denna kontakt.
-		 *  
+		 *
 		 */
 		if (e.getSource() == sökB) {
 
