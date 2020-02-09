@@ -1,8 +1,8 @@
 package domaintest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import java.io.File;
 import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -14,12 +14,10 @@ import domain.ContactBook;
 public class ContactBookTest {
 	
 	private ContactBook cb;
-	private File file;
 	
 	@BeforeEach
 	public void init() {
 		cb = new ContactBook();
-		Contact c = new Contact();
 		cb.add(new Contact("Adam"));
 		cb.add(new Contact("Bertil"));
 		cb.add(new Contact("Caesar"));
@@ -32,5 +30,13 @@ public class ContactBookTest {
 		
 		found = cb.find("Adam");
 		assertEquals(1, found.size());
+	}
+	
+	@Test
+	public void testRemoveByString() {
+		int before = cb.size();
+		cb.remove("3: David");
+		int after = cb.size();
+		assertTrue(before > after);
 	}
 }
