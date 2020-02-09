@@ -1,10 +1,14 @@
 package domain;
 
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+import io.ReadFile;
+
 /**
- * Right now a contact book is the same thing as a linked list of contacts
+ * Right now a contact book is the same thing as a linked list of contacts,
+ * with additional features.
  * 
  * @author ptemrz
  *
@@ -33,6 +37,21 @@ public class ContactBook extends LinkedList<Contact> {
 		return foundContacts;
 	}
 	
+	/**
+	 * 
+	 * @param filePath
+	 * @throws IOException
+	 */
+	public void loadContactsFromFile() throws IOException {
+		ReadFile r = new ReadFile();
+		ContactBook cb = r.readfile();
+		this.addAll(cb);
+	}
+	
+	/**
+	 * 
+	 * @param indexedRow
+	 */
 	public void remove(String indexedRow) {
 		Scanner s = new Scanner(indexedRow);
 		s.useDelimiter(":");
@@ -41,6 +60,9 @@ public class ContactBook extends LinkedList<Contact> {
 		this.remove(i);
 	}
 	
+	/**
+	 * 
+	 */
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
@@ -55,6 +77,9 @@ public class ContactBook extends LinkedList<Contact> {
 		return sb.toString();
 	}
 
+	/**
+	 * 
+	 */
 	@Override
 	public boolean equals(Object o) {
 		
