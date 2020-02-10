@@ -33,6 +33,29 @@ public class ContactBookTest {
 	}
 	
 	@Test
+	public void testFindMoreThanOne() {
+		Contact c = new Contact("Adam");
+		cb.add(c);
+		
+		List<Contact> found;
+		
+		found = cb.find("Adam");
+		assertEquals(2, found.size());
+	}
+	
+	@Test
+	public void testFindCorrectContact() {
+		Contact c = new Contact("Erik");
+		cb.add(c);
+		
+		List<Contact> found;
+		
+		found = cb.find("Erik");
+		
+		assertTrue(c == found.get(0));
+	}
+	
+	@Test
 	public void testRemoveByString() {
 		int before = cb.size();
 		cb.remove("3: David");
