@@ -7,8 +7,8 @@ import java.util.Scanner;
 import io.ReadFile;
 
 /**
- * Right now a contact book is the same thing as a linked list of contacts,
- * with additional features.
+ * Right now a contact book is the same thing as a linked list of contacts, with
+ * additional features.
  * 
  * @author ptemrz
  *
@@ -16,7 +16,6 @@ import io.ReadFile;
 public class ContactBook extends LinkedList<Contact> {
 	private static final long serialVersionUID = 1L;
 
-	
 	/**
 	 * 
 	 * @param searchString the string to find
@@ -36,18 +35,25 @@ public class ContactBook extends LinkedList<Contact> {
 
 		return foundContacts;
 	}
-	
+
 	/**
+	 * Silently loads all contacts from a file into this ContactBook.
 	 * 
-	 * @param filePath
-	 * @throws IOException
+	 * @return true iff the IO operation succeeds, even if the file is empty and no contacts are loaded.
 	 */
-	public void loadContactsFromFile() throws IOException {
+	public boolean loadContactsFromFile() {
 		ReadFile r = new ReadFile();
-		ContactBook cb = r.readfile();
+		ContactBook cb;
+		try {
+			cb = r.readfile();
+		} catch (IOException e) {
+			return false;
+		}
 		this.addAll(cb);
+
+		return true;
 	}
-	
+
 	/**
 	 * 
 	 * @param indexedRow
@@ -59,18 +65,18 @@ public class ContactBook extends LinkedList<Contact> {
 		s.close();
 		this.remove(i);
 	}
-	
+
 	/**
 	 * 
 	 */
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		
-		for(Contact c : this) {
-			sb.append(this.indexOf(c)+": ");
+
+		for (Contact c : this) {
+			sb.append(this.indexOf(c) + ": ");
 			for (String field : c.toStringArray()) {
-				sb.append(field+" ");
+				sb.append(field + " ");
 			}
 			sb.append("\n");
 		}
@@ -82,22 +88,22 @@ public class ContactBook extends LinkedList<Contact> {
 	 */
 	@Override
 	public boolean equals(Object o) {
-		
-		if(! (o instanceof ContactBook)) {
+
+		if (!(o instanceof ContactBook)) {
 			return false;
 		}
 		ContactBook c = (ContactBook) o;
-		
-		if(c.size() != this.size()) {
+
+		if (c.size() != this.size()) {
 			return false;
 		}
-		
-		for(int i = 0; i < size(); i++) {
-			if(!c.get(i).equals(c.get(i))) {
+
+		for (int i = 0; i < size(); i++) {
+			if (!c.get(i).equals(this.get(i))) {
 				return false;
 			}
 		}
-		
+
 		return true;
 	}
 }
