@@ -169,8 +169,25 @@ public class Contact implements Comparable<Contact> {
 		return lastName.compareTo(o.getLastName());
 	}
 
+	/**
+	 * @return true iff all fields are equal
+	 */
 	@Override
 	public boolean equals(Object o) {
-		return super.equals(o);
+		if (!(o instanceof Contact)) {
+			return false;
+		}
+		Contact c = (Contact) o;
+
+		String[] fThis  = this.toStringArray();
+		String[] fOther = c.toStringArray();
+		
+		for (int i = 0; i < fThis.length; i++) {
+			if (!fThis[i].equalsIgnoreCase(fOther[i])) {
+				return false;
+			}
+		}
+
+		return true;
 	}
 }
