@@ -38,8 +38,13 @@ public class ReadFile {
 
 			while (s.hasNextLine()) {
 				String line = s.nextLine();
+				
 				String[] falt = line.split("; ");
-
+				for (int i = 0; i < falt.length; i++) {
+					if(falt[i].equals("null")) {
+						falt[i] = null;
+					}
+				}
 				Contact c = new Contact();
 
 				c.setTitle(falt[0]);

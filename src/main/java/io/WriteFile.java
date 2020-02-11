@@ -4,11 +4,13 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.ObjectInputStream.GetField;
 
 import domain.Contact;
 import domain.ContactBook;
 
 public class WriteFile {
+
 	BufferedWriter bw = null;
 
 	/**
@@ -34,7 +36,6 @@ public class WriteFile {
 		File file = new File(fileName);
 
 		try {
-			String mycontent = "This String would be written" + " to the specified File";
 			// Specify the file name and path here
 			/*
 			 * This logic will make sure that the file gets created if it is not present at
@@ -44,19 +45,18 @@ public class WriteFile {
 				file.createNewFile();
 			}
 
+			StringBuilder sb = new StringBuilder();
 			for (Contact lines : cb) {
-				String s = String.format(lines.getTitle() + ", \n" + lines.getFirstName() + ", \n"
-						+ lines.getMiddleName() + ", \n" + lines.getLastName() + ", \n" + lines.getEmail() + ", \n"
-						+ lines.getStreetAdress() + ", \n" + lines.getCode() + ", \n" + lines.getCity() + ", \n"
-						+ lines.getCountry() + ", \n" + lines.getComment() + ", \n" + lines.getBirthday());
-
-				System.out.println(s);
-
+				String s = lines.getTitle() + "," + lines.getFirstName() + "," + lines.getMiddleName() + ","
+						+ lines.getLastName() + "," + lines.getEmail() + "," + lines.getStreetAdress() + ","
+						+ lines.getCode() + "," + lines.getCity() + "," + lines.getCountry() + "," + lines.getComment()
+						+ "," + lines.getBirthday() + "\n";
+				sb.append(s);
 			}
 
 			FileWriter fw = new FileWriter(file);
 			bw = new BufferedWriter(fw);
-			bw.write(mycontent);
+			bw.write(sb.toString());
 			System.out.println("File written Successfully");
 
 		} catch (IOException ioe) {

@@ -19,6 +19,13 @@ import domain.ContactBook;
 public class ReadFileTest {
 	private ContactBook cb;
 
+	/**
+	 * Nadia H.
+	 * ReadFile tester 
+	 * testar om filen existerar
+	 * @throws IOException
+	 */
+	
 	@BeforeEach
 	public void init() {
 		cb = new ContactBook();
@@ -36,7 +43,11 @@ public class ReadFileTest {
 		assertTrue(f.isFile());
 
 	}
-
+	/**
+	 * 
+	 * @throws IOException
+	 */
+	
 	@Test
 	public void readLineTest() throws IOException {
 		Scanner s;
