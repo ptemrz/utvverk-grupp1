@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 import io.ReadFile;
+import io.WriteFile;
 
 /**
  * Right now a contact book is the same thing as a linked list of contacts, with
@@ -16,6 +17,18 @@ import io.ReadFile;
 public class ContactBook extends LinkedList<Contact> {
 	private static final long serialVersionUID = 1L;
 
+	
+	@Override
+	public boolean add(Contact c) {
+		try {
+			super.add(c);
+			WriteFile.writeToFile(this);
+		} catch(Exception e) {
+			System.err.println("failed to add contact");
+		}
+		return true;
+		
+	}
 	/**
 	 * 
 	 * @param searchString the string to find
