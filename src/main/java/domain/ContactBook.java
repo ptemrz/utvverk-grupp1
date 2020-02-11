@@ -88,9 +88,9 @@ public class ContactBook extends LinkedList<Contact> {
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 
-		for (Contact c : this) {
-			sb.append(this.indexOf(c) + ": ");
-			for (String field : c.toStringArray()) {
+		for (int i = 0; i < this.size(); i++) {
+			sb.append(i + ": ");
+			for (String field : this.get(i).toStringArray()) {
 				sb.append(field + " ");
 			}
 			sb.append("\n");
