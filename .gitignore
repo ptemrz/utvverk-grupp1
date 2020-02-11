@@ -24,4 +24,4 @@ hs_err_pid*
 /target/
 
 # contactbook
-Contact cb
+Contact\ cb
