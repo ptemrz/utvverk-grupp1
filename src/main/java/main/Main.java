@@ -5,7 +5,7 @@ import gui.GUI;
 /**
  * 
  * @author danijela
- *i denna class man anropar GUI var ligger kod för SWING
+ *@ i denna class man anropar GUI var ligger kod för SWING
  */
 public class Main {
 
