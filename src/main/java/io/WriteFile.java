@@ -4,14 +4,11 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.ObjectInputStream.GetField;
 
 import domain.Contact;
 import domain.ContactBook;
 
 public class WriteFile {
-
-	BufferedWriter bw = null;
 
 	public static void writeToFile(ContactBook cb) {
 		writeToFile(cb, "Contact cb");
@@ -36,7 +33,7 @@ public class WriteFile {
 				String s = lines.getTitle() + "," + lines.getFirstName() + "," + lines.getMiddleName() + ","
 						+ lines.getLastName() + "," + lines.getEmail() + "," + lines.getStreetAdress() + ","
 						+ lines.getCode() + "," + lines.getCity() + "," + lines.getCountry() + "," + lines.getComment()
-						+ "," + lines.getBirthday() + "\n";
+						+ "," + lines.getBirthday()+"\n";
 				sb.append(s);
 			}
 
