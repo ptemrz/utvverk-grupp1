@@ -109,6 +109,7 @@ public class GUI extends JFrame implements ActionListener {
 
 		if (e.getSource() == listaB) {
 			{
+				cb.loadContactsFromFile();
 				resultatTA.setText(cb.toString());
 			}
 		}
