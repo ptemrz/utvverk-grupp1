@@ -51,6 +51,7 @@ public class ContactBook extends LinkedList<Contact> {
 
 	/**
 	 * Silently loads all contacts from a file into this ContactBook.
+	 * Does not allow duplicates.
 	 * 
 	 * @return true iff the IO operation succeeds, even if the file is empty and no contacts are loaded.
 	 */
@@ -62,7 +63,11 @@ public class ContactBook extends LinkedList<Contact> {
 		} catch (IOException e) {
 			return false;
 		}
-		this.addAll(cb);
+		for(Contact c: cb) {
+			if(!this.contains(c)) {
+				add(c);
+			}
+		}
 
 		return true;
 	}
