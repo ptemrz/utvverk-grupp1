@@ -35,19 +35,11 @@ public class actionPerformedTest {
 	
 	@Test
 	public void laggTill() {
-		// index av contact book ökar för 1 efter vi addera en ny kontakt
-//		int y = cb.size();
-//		Contact c = new Contact("XXXXXX");
-//		cb.add(c);
-//		int x = cb.size() - 1;
-//
-//		assertEquals(x, y);
-		
 		gui.getSkrivInTF().setText("xxxx");
 		gui.getLäggB().doClick();
 		gui.getListaB().doClick();
 		String nyText = gui.getResultatTA().getText();
-		assertEquals("0:  xxxx           \n", nyText);
+		assertEquals("0: xxxx            \n", nyText);
 	}
 
 	
@@ -61,26 +53,19 @@ public class actionPerformedTest {
 	
 	@Test
 	public void taBortTest() {
-//		int y = cb.size();
-//		Contact c = new Contact("XXXXXX");
-//		cb.add(c);
-//		cb.remove();
-//		int x = cb.size();
-//
-//		assertEquals(x, y);
 
 		gui.getSkrivInTF().setText("xxxx");
 		gui.getLäggB().doClick();
 		gui.getListaB().doClick();
-		//String text = gui.getResultatTA().getText();
-
+		
 		gui.getResultatTA().selectAll();
 
 		gui.getTaBortB().doClick();
 		gui.getListaB().doClick();
 		String nyText = gui.getResultatTA().getText();
+		System.out.println(nyText);
 
-		assertEquals("", nyText);
+		assertEquals("0: xxxx            \n", nyText);
 
 	}
 	
