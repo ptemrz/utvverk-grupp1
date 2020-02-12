@@ -46,7 +46,7 @@ public class WriteFile {
 				String s = lines.getTitle() + "," + lines.getFirstName() + "," + lines.getMiddleName() + ","
 						+ lines.getLastName() + "," + lines.getEmail() + "," + lines.getStreetAdress() + ","
 						+ lines.getCode() + "," + lines.getCity() + "," + lines.getCountry() + "," + lines.getComment()
-						+ "," + lines.getBirthday();
+						+ "," + lines.getBirthday()+ "\n";
 					
 				sb.append(s);
 			}
