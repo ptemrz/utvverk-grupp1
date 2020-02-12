@@ -16,10 +16,17 @@ public class Contact implements Comparable<Contact> {
 	private String comment;
 	private LocalDate birthday;
 
+	
+	/**
+	 * Creates a contact with no contact information. Contact information
+	 * must be set with the setter methods.
+	 * The use of the empty constructor is discouraged.
+	 * @deprecated
+	 */
 	public Contact() {
-
+		// Null contact
 	}
-
+	
 	public Contact(String firstName) {
 		this.firstName = firstName;
 	}
