@@ -113,20 +113,11 @@ public class GUI extends JFrame implements ActionListener {
 				if(s==true)
 				resultatTA.setText(cb.toString());
 				else
-////				
-			resultatTA.setText("Lista är tomt");
+				resultatTA.setText("Lista är tomt");
 			}
 		}
 		
-//		if (e.getSource() == listaB) {
-//			//{
-////				if(cb.loadContactsFromFile()==true)
-//						resultatTA.setText((cb.toString()));
-////				else
-////					
-////				resultatTA.setText("Lista är tomt");
-////			}
-//		}
+
 
 		/**
 		 * kontakt som vill man leta efter i kontaktboken först behöver man att
