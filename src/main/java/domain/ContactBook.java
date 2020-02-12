@@ -1,6 +1,7 @@
 package domain;
 
 import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -16,17 +17,25 @@ import io.WriteFile;
  */
 public class ContactBook extends LinkedList<Contact> {
 	private static final long serialVersionUID = 1L;
-	
+
+	/**
+	 * Saves this ContactBook to permanent storage (hard drive)
+	 * 
+	 * @return true - if the ContactBook was successfully saved<br>
+	 *         false - if any exception is caught
+	 */
 	public boolean save() {
 		try {
 			WriteFile.writeToFile(this);
-		} catch(Exception e) {
+		} catch (Exception e) {
 			System.err.println("failed to add contact");
+			return false;
 		}
 		return true;
 	}
-	
+
 	/**
+	 * Find contacts by a search string.
 	 * 
 	 * @param searchString the string to find
 	 * @return A new contact book with contacts that match the searchString
@@ -47,10 +56,11 @@ public class ContactBook extends LinkedList<Contact> {
 	}
 
 	/**
-	 * Silently loads all contacts from a file into this ContactBook.
-	 * Does not allow duplicates.
+	 * Silently loads all contacts from a file into this ContactBook. Does not allow
+	 * duplicates.
 	 * 
-	 * @return true iff the IO operation succeeds, even if the file is empty and no contacts are loaded.
+	 * @return true if and only if the IO operation succeeds, even if the file is
+	 *         empty and no contacts are loaded.
 	 */
 	public boolean loadContactsFromFile() {
 		ReadFile r = new ReadFile();
@@ -60,8 +70,9 @@ public class ContactBook extends LinkedList<Contact> {
 		} catch (IOException e) {
 			return false;
 		}
-		for(Contact c: cb) {
-			if(!this.contains(c)) {
+
+		for (Contact c : cb) {
+			if (!this.contains(c)) {
 				add(c);
 			}
 		}
@@ -70,19 +81,38 @@ public class ContactBook extends LinkedList<Contact> {
 	}
 
 	/**
+	 * Remove a contact from this ContactBook by parsing a special String object,
+	 * the indexedRow. <br>
+	 * An indexedRow begins with an index number followed by a colon. <br>
+	 * Example "1: Mr. John Doe 0707123456" <br>
+	 * The "1" will be parsed as the index to be removed from the ContactBook. <br>
+	 * If the index is out of bounds, nothing will happen.
+	 * If indexedRow is malformed, nothing will happen.
 	 * 
 	 * @param indexedRow
 	 */
 	public void remove(String indexedRow) {
 		Scanner s = new Scanner(indexedRow);
 		s.useDelimiter(":");
-		int i = s.nextInt();
+		int i;
+		try {
+			i = s.nextInt();
+		} catch (InputMismatchException e) {
+			s.close();
+			return;
+		}
 		s.close();
-		this.remove(i);
+		try {
+			this.remove(i);
+		} catch (IndexOutOfBoundsException e) {
+			// Do nothing
+		}
 	}
 
 	/**
-	 * 
+	 * Builds a string from all the contacts in this ContactBook.
+	 * Each contact will be on its own row.
+	 * Each row can be used as an indexedString for the remove method.
 	 */
 	@Override
 	public String toString() {
@@ -99,7 +129,7 @@ public class ContactBook extends LinkedList<Contact> {
 	}
 
 	/**
-	 * 
+	 * Two ContactBooks are considered equal if they contain exactly the same contact information.
 	 */
 	@Override
 	public boolean equals(Object o) {
