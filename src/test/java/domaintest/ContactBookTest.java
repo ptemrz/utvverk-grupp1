@@ -82,4 +82,14 @@ public class ContactBookTest {
 		int after = cb.size();
 		assertTrue(before == after);
 	}
+	
+	@Test
+	public void testFindByPhoneNumber() {
+		Contact c = new Contact("Erik");
+		c.setNumber("0707123456");
+		cb.add(c);
+		ContactBook found = cb.find("0707123456");
+		
+		assertTrue(found.get(0) == c);
+	}
 }
