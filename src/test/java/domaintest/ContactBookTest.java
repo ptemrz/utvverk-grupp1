@@ -62,4 +62,12 @@ public class ContactBookTest {
 		int after = cb.size();
 		assertTrue(before > after);
 	}
+	
+	@Test
+	public void testDontRemoveIfStringIsBad() {
+		int before = cb.size();
+		cb.remove("5: David");
+		int after = cb.size();
+		assertTrue(before == after);
+	}
 }
