@@ -16,16 +16,16 @@ import io.WriteFile;
  */
 public class ContactBook extends LinkedList<Contact> {
 	private static final long serialVersionUID = 1L;
-	
+
 	public boolean save() {
 		try {
 			WriteFile.writeToFile(this);
-		} catch(Exception e) {
+		} catch (Exception e) {
 			System.err.println("failed to add contact");
 		}
 		return true;
 	}
-	
+
 	/**
 	 * 
 	 * @param searchString the string to find
@@ -47,10 +47,11 @@ public class ContactBook extends LinkedList<Contact> {
 	}
 
 	/**
-	 * Silently loads all contacts from a file into this ContactBook.
-	 * Does not allow duplicates.
+	 * Silently loads all contacts from a file into this ContactBook. Does not allow
+	 * duplicates.
 	 * 
-	 * @return true iff the IO operation succeeds, even if the file is empty and no contacts are loaded.
+	 * @return true iff the IO operation succeeds, even if the file is empty and no
+	 *         contacts are loaded.
 	 */
 	public boolean loadContactsFromFile() {
 		ReadFile r = new ReadFile();
@@ -60,8 +61,9 @@ public class ContactBook extends LinkedList<Contact> {
 		} catch (IOException e) {
 			return false;
 		}
-		for(Contact c: cb) {
-			if(!this.contains(c)) {
+
+		for (Contact c : cb) {
+			if (!this.contains(c)) {
 				add(c);
 			}
 		}
@@ -78,7 +80,11 @@ public class ContactBook extends LinkedList<Contact> {
 		s.useDelimiter(":");
 		int i = s.nextInt();
 		s.close();
-		this.remove(i);
+		try {
+			this.remove(i);
+		} catch (IndexOutOfBoundsException e) {
+			//Do nothing
+		}
 	}
 
 	/**
