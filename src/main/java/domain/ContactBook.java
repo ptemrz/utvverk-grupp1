@@ -112,7 +112,7 @@ public class ContactBook extends LinkedList<Contact> {
 	/**
 	 * Builds a string from all the contacts in this ContactBook.
 	 * Each contact will be on its own row.
-	 * Each row can be used as an indexedString for the find method.
+	 * Each row can be used as an indexedString for the remove method.
 	 */
 	@Override
 	public String toString() {
