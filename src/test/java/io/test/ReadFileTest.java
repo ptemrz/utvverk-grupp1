@@ -41,6 +41,10 @@ public class ReadFileTest {
 	public void readFileTest() throws FileNotFoundException {
 		File f = new File("Contact cb");
 		assertTrue(f.isFile());
+		/**
+		 * Testar om metoden läser korrekta info på filen
+		 * Nadia Hamid
+		 */
 	}
 	@Test
 	public void readFileIsCorrectTest() throws IOException {	
