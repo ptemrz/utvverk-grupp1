@@ -25,6 +25,18 @@ public class ContactBookTest {
 	}
 	
 	@Test
+	public void testEquals() {
+		ContactBook cb2 = new ContactBook();
+		cb2.add(new Contact("Adam"));
+		cb2.add(new Contact("Bertil"));
+		cb2.add(new Contact("Caesar"));
+		cb2.add(new Contact("David"));
+	
+		assertEquals(cb, cb2);
+		
+	}
+	
+	@Test
 	public void testFind() {
 		List<Contact> found;
 		
