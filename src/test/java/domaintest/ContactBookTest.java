@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import domain.Contact;
 import domain.ContactBook;
 
+
 public class ContactBookTest {
 	
 	private ContactBook cb;
@@ -69,5 +70,11 @@ public class ContactBookTest {
 		cb.remove("5: David");
 		int after = cb.size();
 		assertTrue(before == after);
+	}
+	
+	@Test
+	public void saveTest() {
+		boolean testing=true;
+		assertEquals(testing, cb.save());
 	}
 }
