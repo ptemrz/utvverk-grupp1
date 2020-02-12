@@ -29,6 +29,7 @@ public class ContactBook extends LinkedList<Contact> {
 			WriteFile.writeToFile(this);
 		} catch (Exception e) {
 			System.err.println("failed to add contact");
+			return false;
 		}
 		return true;
 	}
