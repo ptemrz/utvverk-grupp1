@@ -154,6 +154,7 @@ public class GUI extends JFrame implements ActionListener {
 			Contact nyCon = new Contact();
 			nyCon.setFirstName(skrivInTF.getText());
 			cb.add(nyCon);
+			cb.save();
 		}
 
 		/**

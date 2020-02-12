@@ -17,7 +17,9 @@ public class actionPerformedTest {
 	public void listaTest() {
 		/**
 		 * i början är kontaktboken är tomt, så vi jämför med en tom String
+		 * 
 		 */
+//	gui.getListaB().doClick();
 		assertEquals("", gui.getResultatTA().getText());
 	}
 
