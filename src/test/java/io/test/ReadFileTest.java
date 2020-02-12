@@ -20,12 +20,11 @@ public class ReadFileTest {
 	private ContactBook cb;
 
 	/**
-	 * Nadia H.
-	 * ReadFile tester 
-	 * testar om filen existerar
+	 * Nadia H. ReadFile tester testar om filen existerar
+	 * 
 	 * @throws IOException
 	 */
-	
+
 	@BeforeEach
 	public void init() {
 		cb = new ContactBook();
@@ -41,29 +40,29 @@ public class ReadFileTest {
 		File f = new File("Contact cb");
 		FileReader fr = new FileReader(f);
 		assertTrue(f.isFile());
-
 	}
 	/**
 	 * 
 	 * @throws IOException
 	 */
-	
+
 	@Test
 	public void readLineTest() throws IOException {
 		Scanner s;
-		File file = new File("Contact cb");
-		FileReader fr = null;
-		BufferedReader br;
-		s = new Scanner(new BufferedReader(new FileReader("Contact cb")));
+		File f = new File("testfile");
+		s = new Scanner(new BufferedReader(new FileReader("testfile")));
 
 		while (s.hasNextLine()) {
 			String line = s.nextLine();
-			String[] falt = line.split("; ");
 
-			Contact c = new Contact();
-			c.setTitle(falt[0]);
-			assertFalse(c.getTitle().isEmpty());
-			
+			String[] falt = line.split(",");
+			for (int i = 0; i < falt.length - 1; i++) {
+				if (falt[i].equals("null")) {
+					falt[i] = null;
+				}
+				System.out.println(falt[i]);
+			}
+
 		}
 	}
 }

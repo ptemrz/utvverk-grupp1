@@ -19,7 +19,6 @@ public class WriteFile {
 		if(cb.isEmpty()){
 			return;
 		}
-		
 		BufferedWriter bw = null;
 		File file = new File(fileName);
 
@@ -36,18 +35,18 @@ public class WriteFile {
 			StringBuilder sb = new StringBuilder();
 			for (Contact lines : cb) {
 				String[] fields = lines.toStringArray();
-				String test = "";
+				String test = " ";
 				for(String line: fields){
 					test += line;
 				}
-				if(test.equals("")) {
+				if(test.equals(" ")) {
 					continue;
 				}
 				
 				String s = lines.getTitle() + "," + lines.getFirstName() + "," + lines.getMiddleName() + ","
 						+ lines.getLastName() + "," + lines.getEmail() + "," + lines.getStreetAdress() + ","
 						+ lines.getCode() + "," + lines.getCity() + "," + lines.getCountry() + "," + lines.getComment()
-						+ "," + lines.getBirthday()+"\n";
+						+ "," + lines.getBirthday();
 					
 				sb.append(s);
 			}
@@ -59,7 +58,6 @@ public class WriteFile {
 
 		} catch (IOException ioe) {
 			System.out.println("File written poorly");
-
 			ioe.printStackTrace();
 		} finally {
 			try {

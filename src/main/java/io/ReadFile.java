@@ -31,8 +31,7 @@ public class ReadFile {
 			try {
 				fr = new FileReader(file);
 			} catch (FileNotFoundException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
+				System.out.println("File doesn't exist or is empty");
 			}
 			s = new Scanner(new BufferedReader(new FileReader("Contact cb")));
 
@@ -49,15 +48,14 @@ public class ReadFile {
 
 				c.setTitle(falt[0]);
 				c.setFirstName(falt[1]);
-				c.setFirstName(falt[2]);
-				c.setMiddleName(falt[3]);
-				c.setLastName(falt[4]);
-				c.setEmail(falt[5]);
-				c.setStreetAdress(falt[6]);
-				c.setCode(falt[7]);
-				c.setCity(falt[8]);
-				c.setCountry(falt[9]);
-				c.setComment(falt[10]);
+				c.setMiddleName(falt[2]);
+				c.setLastName(falt[2]);
+				c.setEmail(falt[4]);
+				c.setStreetAdress(falt[5]);
+				c.setCode(falt[6]);
+				c.setCity(falt[7]);
+				c.setCountry(falt[8]);
+				c.setComment(falt[9]);
 				c.setBirthday(null);
 
 				cb.add(c);
@@ -67,7 +65,6 @@ public class ReadFile {
 			try {
 				result = br.readLine();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
