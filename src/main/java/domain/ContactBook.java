@@ -1,6 +1,5 @@
 package domain;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -58,10 +57,7 @@ public class ContactBook extends LinkedList<Contact> {
 		ContactBook cb;
 		try {
 			cb = r.readfile();
-		} catch(FileNotFoundException e) {
-			return false;
-		}
-		catch (IOException e) {
+		} catch (IOException e) {
 			return false;
 		}
 		for(Contact c: cb) {
