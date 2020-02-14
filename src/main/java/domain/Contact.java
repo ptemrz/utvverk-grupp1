@@ -24,10 +24,12 @@ public class Contact implements Comparable<Contact> {
 	 * @deprecated
 	 */
 	public Contact() {
+		super();
 		// Null contact
 	}
 	
 	public Contact(String firstName) {
+		super();
 		this.firstName = firstName;
 	}
 
@@ -152,6 +154,7 @@ public class Contact implements Comparable<Contact> {
 
 		String[] allFields = { title, firstName, middleName, lastName, number, email, streetAdress, code, city, country,
 				comment, bDay };
+		
 		for (int i = 0; i < allFields.length; i++) {
 			if (allFields[i] == null) {
 				allFields[i] = "";

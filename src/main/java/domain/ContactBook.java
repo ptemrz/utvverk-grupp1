@@ -1,6 +1,8 @@
 package domain;
 
 import java.io.IOException;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -28,10 +30,39 @@ public class ContactBook extends LinkedList<Contact> {
 		try {
 			WriteFile.writeToFile(this);
 		} catch (Exception e) {
-			System.err.println("failed to add contact");
+			System.err.println("failed to save ContactBook");
 			return false;
 		}
 		return true;
+	}
+
+	/**
+	 * Add which disallows duplicates
+	 */
+	@Override
+	public boolean add(Contact c) {
+		if (this.contains(c)) {
+			return false;
+		} else {
+			return super.add(c);
+		}
+	}
+
+	/**
+	 * Find contacts by multiple search strings<br>
+	 * @see find(String searchString)
+	 * @param searchStrings
+	 * @return
+	 */
+	public ContactBook find(String[] searchStrings) {
+		ContactBook cb = new ContactBook();
+		for (String string : searchStrings) {
+			ContactBook temp = find(string);
+			for (Contact c : temp) {
+				cb.add(c);
+			}
+		}
+		return cb;
 	}
 
 	/**
@@ -86,8 +117,8 @@ public class ContactBook extends LinkedList<Contact> {
 	 * An indexedRow begins with an index number followed by a colon. <br>
 	 * Example "1: Mr. John Doe 0707123456" <br>
 	 * The "1" will be parsed as the index to be removed from the ContactBook. <br>
-	 * If the index is out of bounds, nothing will happen.
-	 * If indexedRow is malformed, nothing will happen.
+	 * If the index is out of bounds, nothing will happen. If indexedRow is
+	 * malformed, nothing will happen.
 	 * 
 	 * @param indexedRow
 	 */
@@ -105,14 +136,14 @@ public class ContactBook extends LinkedList<Contact> {
 		try {
 			this.remove(i);
 		} catch (IndexOutOfBoundsException e) {
-			// Do nothing
+			System.out.println("ContactBook error");
 		}
 	}
 
 	/**
-	 * Builds a string from all the contacts in this ContactBook.
-	 * Each contact will be on its own row.
-	 * Each row can be used as an indexedString for the remove method.
+	 * Builds a string from all the contacts in this ContactBook. Each contact will
+	 * be on its own row. Each row can be used as an indexedString for the remove
+	 * method.
 	 */
 	@Override
 	public String toString() {
@@ -129,7 +160,8 @@ public class ContactBook extends LinkedList<Contact> {
 	}
 
 	/**
-	 * Two ContactBooks are considered equal if they contain exactly the same contact information.
+	 * Two ContactBooks are considered equal if they contain exactly the same
+	 * contact information.
 	 */
 	@Override
 	public boolean equals(Object o) {

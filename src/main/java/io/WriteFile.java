@@ -49,7 +49,7 @@ public class WriteFile {
 
 			FileWriter fw = new FileWriter(file);
 			bw = new BufferedWriter(fw);
-			bw.write(sb.toString());
+			bw.append(sb.toString());
 			System.out.println("File written Successfully");
 
 		} catch (IOException ioe) {

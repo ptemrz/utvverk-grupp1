@@ -37,10 +37,10 @@ public class ReadFile {
 
 			while (s.hasNextLine()) {
 				String line = s.nextLine();
-				
+
 				String[] falt = line.split(",");
-				for (int i = 0; i < falt.length-1; i++) {
-					if(falt[i].equals("null")) {
+				for (int i = 0; i < falt.length - 1; i++) {
+					if (falt[i].equals("null")) {
 						falt[i] = null;
 					}
 				}
@@ -49,7 +49,7 @@ public class ReadFile {
 				c.setTitle(falt[0]);
 				c.setFirstName(falt[1]);
 				c.setMiddleName(falt[2]);
-				c.setLastName(falt[2]);
+				c.setLastName(falt[3]);
 				c.setEmail(falt[4]);
 				c.setStreetAdress(falt[5]);
 				c.setCode(falt[6]);
