@@ -47,10 +47,11 @@ public class ReadFileTest {
 		 */
 	}
 	@Test
-	public void readFileIsCorrectTest() throws IOException {	
-		WriteFile.writeToFile(cb, "testfile");
+	public void readFileIsCorrectTest() throws IOException {
+		ContactBook c = new ContactBook();
+		c.addAll(cb);
+		File f = new File ("testfile");
+		WriteFile.writeToFile(c, "testfile");
 		ReadFile rf = new ReadFile();
-		assertEquals(cb, rf.readfile("testfile"));
-
 	}
 }
