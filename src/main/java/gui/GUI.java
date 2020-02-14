@@ -120,7 +120,7 @@ public class GUI extends JFrame implements ActionListener {
 		panel3.setLayout(new FlowLayout(FlowLayout.CENTER));
 		panel3.setBackground(Color.white);
 		
-		// panel1.add(infoL);
+		
 		panel1.setLayout(new GridLayout(12,2));//2 rader 1 kolumn
 		panel1.add(title);  panel1.add(inTitle);
 		panel1.add(name);   panel1.add(inName);
@@ -176,7 +176,8 @@ public class GUI extends JFrame implements ActionListener {
 
 		/**
 		 * när man klicka på knappen "Lista" ligger innehåll från kontaktboken till
-		 * JTextArea
+		 * JTextArea om det finns kontakt annars får man meddelande att bok finns inte 
+		 * samt att man behöver att skapa en ny bok
 		 */
 
 		if (e.getSource() == listaB) {
