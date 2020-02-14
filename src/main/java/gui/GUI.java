@@ -262,7 +262,7 @@ public class GUI extends JFrame implements ActionListener {
 			inCity.setText(null);
 			inCountry.setText(null);
 			inComment.setText(null);
-			//inBDay.setText(null);
+			inBDay.setText(null);
 			
 			
 		}
