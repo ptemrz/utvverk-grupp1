@@ -185,7 +185,8 @@ public class GUI extends JFrame implements ActionListener {
 				if (s == true)
 					resultatTA.setText(cb.toString());
 				else
-					resultatTA.setText("Listan är tom");
+					resultatTA.setText("Listan är tom");				
+				
 			}
 		}
 
@@ -229,6 +230,20 @@ public class GUI extends JFrame implements ActionListener {
 			//nyCon.setBirthday(inBDay.getText());
 			cb.add(nyCon);
 			cb.save();
+			inTitle.setText(null);
+			inName.setText(null);
+			inMname.setText(null);
+			inLname.setText(null);
+			inPhone.setText(null);
+			inEmail.setText(null);
+			inStreet.setText(null);
+			inCode.setText(null);
+			inCity.setText(null);
+			inCountry.setText(null);
+			inComment.setText(null);
+			//inBDay.setText(null);
+			
+			
 		}
 
 		/**
