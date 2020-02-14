@@ -48,9 +48,9 @@ public class ReadFileTest {
 	}
 	@Test
 	public void readFileIsCorrectTest() throws IOException {	
-		WriteFile.writeToFile(cb, "tesfile");
+		WriteFile.writeToFile(cb, "testfile");
 		ReadFile rf = new ReadFile();
-		assertEquals(cb, rf.readfile());
+		assertEquals(cb, rf.readfile("testfile"));
 
 	}
 }
