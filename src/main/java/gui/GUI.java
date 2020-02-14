@@ -33,8 +33,7 @@ public class GUI extends JFrame implements ActionListener {
 	private JPanel panel1 = new JPanel();
 	private JPanel panel2 = new JPanel();
 	private JPanel panel3 = new JPanel();
-	// private JLabel infoL = new JLabel("Skriv text i blå rutan och klicka den
-	// lämpliga knappen", JLabel.CENTER);
+	
 	private JButton listaB = new JButton("List");
 	private JButton sökB = new JButton("Search");
 	private JButton läggB = new JButton("Create");
@@ -186,7 +185,7 @@ public class GUI extends JFrame implements ActionListener {
 				if (s == true)
 					resultatTA.setText(cb.toString());
 				else
-					resultatTA.setText("Listan är tom");				
+					resultatTA.setText("The book does not exist! Create a new book.");				
 				
 			}
 		}
@@ -217,7 +216,7 @@ public class GUI extends JFrame implements ActionListener {
 			
 			ContactBook temp = cb.find(data);
 			if (temp.isEmpty()) {
-				resultatTA.setText("Kontakt finns inte i boken! " );
+				resultatTA.setText("The contact is not in the book! " );
 				
 			}else {
 				resultatTA.setText(temp.toString());
