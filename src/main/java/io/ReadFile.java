@@ -56,7 +56,7 @@ public class ReadFile {
 				c.setCity(falt[7]);
 				c.setCountry(falt[8]);
 				c.setComment(falt[9]);
-				c.setBirthday(null);
+				c.setBirthday(falt[10]);
 
 				cb.add(c);
 
