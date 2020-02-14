@@ -16,18 +16,17 @@ public class Contact implements Comparable<Contact> {
 	private String comment;
 	private LocalDate birthday;
 
-	
 	/**
-	 * Creates a contact with no contact information. Contact information
-	 * must be set with the setter methods.
-	 * The use of the empty constructor is discouraged.
+	 * Creates a contact with no contact information. Contact information must be
+	 * set with the setter methods. The use of the empty constructor is discouraged.
+	 * 
 	 * @deprecated
 	 */
 	public Contact() {
 		super();
 		// Null contact
 	}
-	
+
 	public Contact(String firstName) {
 		super();
 		this.firstName = firstName;
@@ -146,6 +145,20 @@ public class Contact implements Comparable<Contact> {
 		this.birthday = birthday;
 	}
 
+	/**
+	 * @param birthday
+	 */
+	public void setBirthday(String birthday) {
+		String[] split = birthday.split("-");
+		try {
+			this.birthday = LocalDate.of(Integer.parseInt(split[0]), Integer.parseInt(split[1]),
+					Integer.parseInt(split[2]));
+		} catch (Exception e) {
+			System.err.println("Failed to set birthday for contact " + getFirstName() + " " + getLastName());
+		}
+
+	}
+
 	public String[] toStringArray() {
 		String bDay = "";
 		if (birthday != null) {
@@ -154,7 +167,7 @@ public class Contact implements Comparable<Contact> {
 
 		String[] allFields = { title, firstName, middleName, lastName, number, email, streetAdress, code, city, country,
 				comment, bDay };
-		
+
 		for (int i = 0; i < allFields.length; i++) {
 			if (allFields[i] == null) {
 				allFields[i] = "";
@@ -189,9 +202,9 @@ public class Contact implements Comparable<Contact> {
 		}
 		Contact c = (Contact) o;
 
-		String[] fThis  = this.toStringArray();
+		String[] fThis = this.toStringArray();
 		String[] fOther = c.toStringArray();
-		
+
 		for (int i = 0; i < fThis.length; i++) {
 			if (!fThis[i].equalsIgnoreCase(fOther[i])) {
 				return false;
