@@ -38,7 +38,7 @@ public class WriteFileTest {
 
 	@Test
 	public void writeToFileIsCorrectTest() throws IOException {
-		WriteFile.writeToFile(cb, "tesfile");
+		WriteFile.writeToFile(cb, "testfile");
 		ReadFile rf = new ReadFile();
 		assertEquals(rf.readfile("testfile"), cb);
 	}
