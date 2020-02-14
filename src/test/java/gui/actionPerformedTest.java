@@ -35,7 +35,7 @@ public class actionPerformedTest {
 	
 	@Test
 	public void laggTill() {
-		gui.getSkrivInTF().setText("xxxx");
+		gui.getInTitle().setText("xxxx");
 		gui.getLäggB().doClick();
 		gui.getListaB().doClick();
 		String nyText = gui.getResultatTA().getText();
@@ -54,7 +54,7 @@ public class actionPerformedTest {
 	@Test
 	public void taBortTest() {
 
-		gui.getSkrivInTF().setText("xxxx");
+		gui.getInTitle().setText("xxxx");
 		gui.getLäggB().doClick();
 		gui.getListaB().doClick();
 		
