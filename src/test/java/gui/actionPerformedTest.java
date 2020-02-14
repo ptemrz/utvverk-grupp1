@@ -65,7 +65,7 @@ public class actionPerformedTest {
 		String nyText = gui.getResultatTA().getText();
 		System.out.println(nyText);
 
-		assertEquals("0: xxxx            \n", nyText);
+		assertEquals("", nyText);
 
 	}
 	
@@ -79,12 +79,12 @@ public class actionPerformedTest {
 
 	@Test
 	public void sök() {
-		gui.getSkrivInTF().setText("yyy");
+		gui.getInTitle().setText("yyy");
 		gui.getLäggB().doClick();
 		gui.getListaB().doClick();
 		String input1 = gui.getResultatTA().getText();
 
-		gui.getSkrivInTF().setText("yyy");
+		gui.getInTitle().setText("yyy");
 		gui.getSökB().doClick();
 		String input2 = gui.getResultatTA().getText();
 
