@@ -98,11 +98,4 @@ public class ContactBookTest {
 
 		assertTrue(found.get(0) == c);
 	}
-	
-	@Test
-	public void testToStringPrintsCompleteInformation() {
-		for(int i = 0; i < cb.size(); i++) {
-			cb.get(i).setTitle(""+(i+10));
-		}		
-	}
 }
