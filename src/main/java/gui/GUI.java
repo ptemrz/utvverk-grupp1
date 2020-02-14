@@ -52,7 +52,7 @@ public class GUI extends JFrame implements ActionListener {
 	private JLabel city = new JLabel("City");
 	private JLabel country = new JLabel("Country");
 	private JLabel comment = new JLabel("Comment");
-	private JLabel bday = new JLabel("Birthday");
+	private JLabel bday = new JLabel("Birthday  (yyyy-mm-dd)");
 
 	// här man skriver text
 	private JTextField inTitle = new JTextField(10);
