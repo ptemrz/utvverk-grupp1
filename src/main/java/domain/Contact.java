@@ -146,9 +146,17 @@ public class Contact implements Comparable<Contact> {
 	}
 
 	/**
+	 * String must be in YYYY-MM-DD format.
 	 * @param birthday
 	 */
 	public void setBirthday(String birthday) {
+		if(birthday == null) {
+			return;
+		}
+		if(birthday.isEmpty()) {
+			return;
+		}
+		
 		String[] split = birthday.split("-");
 		try {
 			this.birthday = LocalDate.of(Integer.parseInt(split[0]), Integer.parseInt(split[1]),
