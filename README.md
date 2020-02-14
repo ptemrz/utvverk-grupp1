@@ -4,6 +4,7 @@
 author danijela 
  här vi bygger vår Swing application
  
+## Användning
  
   Beroende på grund vilken knapp man trycker på, sker olika händelser.
  
@@ -20,4 +21,12 @@ author danijela
  För att se resultatet behöver man att klicka knappen "lista" en gång till.
  
  Alla resultat ser man i textArea som har horisontell och vertikal scroll.
+ 
+## Bygginstruktioner
+
+krav: maven, java >= 1.8
+
+Klona det här repot och kör mvn package.
+Kör sedan<br> java -jar target/target/utvverk-grupp1-1.0-SNAPSHOT.jar
+
  
