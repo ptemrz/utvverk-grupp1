@@ -156,6 +156,9 @@ public class Contact implements Comparable<Contact> {
 		if(birthday.isEmpty()) {
 			return;
 		}
+		if(birthday.equals("null")) {
+			return;
+		}
 		
 		String[] split = birthday.split("-");
 		try {
@@ -163,6 +166,7 @@ public class Contact implements Comparable<Contact> {
 					Integer.parseInt(split[2]));
 		} catch (Exception e) {
 			System.err.println("Failed to set birthday for contact " + getFirstName() + " " + getLastName());
+			throw new IllegalArgumentException();
 		}
 
 	}
