@@ -199,11 +199,94 @@ public class GUI extends JFrame implements ActionListener {
 		 */
 		if (e.getSource() == sökB) {
 
-			String input = inTitle.getText();
-			if (!cb.find(input).toString().equals(""))
+			String titleStr = inTitle.getText();
+			String nameStr = inTitle.getText();	
+			String mNameStr=inMname.getText();
+			String lNameStr=inLname.getText();
+			String phoneStr=inPhone.getText();
+			String emailStr=inEmail.getText();
+			String streetStr=inStreet.getText();
+			String codeStr=inCode.getText();
+			String cityStr=inCity.getText();
+			String countryStr=inCountry.getText();
+			String commentStr=inComment.getText();
+			
+			if (!cb.find(titleStr).toString().equals(null))
 				resultatTA.setText(cb.find(inTitle.getText()).toString());
+//			else
+//				resultatTA.setText("No results found " + inTitle.getText());
+								
+			else if (!cb.find(nameStr).toString().equals(null))
+				resultatTA.setText(cb.find(inName.getText()).toString());
+//			else
+//				resultatTA.setText("No results found " + inName.getText());
+//						
+			else if (!cb.find(mNameStr).toString().equals(null))
+				resultatTA.setText(cb.find(inMname.getText()).toString());
+//			else
+//				resultatTA.setText("No results found " + inMname.getText());
+						
+			else if (!cb.find(lNameStr).toString().equals(null))
+				resultatTA.setText(cb.find(inLname.getText()).toString());
+//			else
+//				resultatTA.setText("No results found " + inLname.getText());
+			
+			
+			else if (!cb.find(phoneStr).toString().equals(null))
+				resultatTA.setText(cb.find(inPhone.getText()).toString());
+//			else
+//				resultatTA.setText("No results found " + inPhone.getText());
+			
+			
+			else if (!cb.find(emailStr).toString().equals(null))
+				resultatTA.setText(cb.find(inEmail.getText()).toString());
+//			else
+//				resultatTA.setText("No results found " + inEmail.getText());
+			
+			
+			else if (!cb.find(streetStr).toString().equals(null))
+				resultatTA.setText(cb.find(inStreet.getText()).toString());
+//			else
+//				resultatTA.setText("No results found " + inStreet.getText());
+			
+			
+			else if (!cb.find(codeStr).toString().equals(null))
+				resultatTA.setText(cb.find(inCode.getText()).toString());
+//			else
+//				resultatTA.setText("No results found " + inCode.getText());
+			
+			
+			else if (!cb.find(cityStr).toString().equals(null))
+				resultatTA.setText(cb.find(inCity.getText()).toString());
+//			else
+//				resultatTA.setText("No results found " + inCity.getText());
+			
+			
+			else if (!cb.find(countryStr).toString().equals(null))
+				resultatTA.setText(cb.find(inCountry.getText()).toString());
+//			else
+//				resultatTA.setText("No results found " + inCountry.getText());
+			
+			
+			else if (!cb.find(commentStr).toString().equals(null))
+				resultatTA.setText(cb.find(inComment.getText()).toString());
+//			else
+//				resultatTA.setText("No results found " + inComment.getText());
+			
+//			String bDayStr=inBDay.getText();
+//			if (!cb.find(bDayStr).toString().equals(""))
+//				resultatTA.setText(cb.find(inBDay.getText()).toString());
+//			else
+//				resultatTA.setText("No results found " + inBDay.getText());
 			else
-				resultatTA.setText("No results found " + inTitle.getText());
+				resultatTA.setText("Kontakt finns inte i boken! " );
+			
+			
+			
+			
+			
+			
+			
 		}
 
 		/**
