@@ -37,10 +37,10 @@ public class ReadFile {
 
 			while (s.hasNextLine()) {
 				String line = s.nextLine();
-				
+
 				String[] falt = line.split(",");
-				for (int i = 0; i < falt.length-1; i++) {
-					if(falt[i].equals("null")) {
+				for (int i = 0; i < falt.length - 1; i++) {
+					if (falt[i].equals("null")) {
 						falt[i] = null;
 					}
 				}
