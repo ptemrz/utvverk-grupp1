@@ -27,6 +27,6 @@ author danijela
 krav: maven, java >= 1.8
 
 Klona det här repot och kör mvn package.
-Kör sedan<br> java -jar target/target/utvverk-grupp1-1.0-SNAPSHOT.jar
+Kör sedan<br> java -jar target/utvverk-grupp1-1.0-SNAPSHOT.jar
 
  
