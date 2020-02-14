@@ -216,6 +216,17 @@ public class GUI extends JFrame implements ActionListener {
 
 			Contact nyCon = new Contact();
 			nyCon.setTitle(inTitle.getText());
+			nyCon.setFirstName(inName.getText());
+			nyCon.setMiddleName(inMname.getText());
+			nyCon.setLastName(inLname.getText());
+			nyCon.setNumber(inPhone.getText());
+			nyCon.setEmail(inEmail.getText());
+			nyCon.setStreetAdress(inStreet.getText());
+			nyCon.setCode(inCode.getText());
+			nyCon.setCity(inCity.getText());
+			nyCon.setCountry(inCountry.getText());
+			nyCon.setComment(inComment.getText());
+			//nyCon.setBirthday(inBDay.getText());
 			cb.add(nyCon);
 			cb.save();
 		}
