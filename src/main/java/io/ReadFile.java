@@ -49,7 +49,7 @@ public class ReadFile {
 				c.setTitle(falt[0]);
 				c.setFirstName(falt[1]);
 				c.setMiddleName(falt[2]);
-				c.setLastName(falt[2]);
+				c.setLastName(falt[3]);
 				c.setEmail(falt[4]);
 				c.setStreetAdress(falt[5]);
 				c.setCode(falt[6]);
