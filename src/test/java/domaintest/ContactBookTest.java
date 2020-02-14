@@ -98,4 +98,15 @@ public class ContactBookTest {
 
 		assertTrue(found.get(0) == c);
 	}
+	
+	@Test
+	public void testFindByMultipleStrings() {
+		Contact c = new Contact("Erik");
+		c.setNumber("0707123456");
+		cb.add(c);
+		String[] searchStrings = {"Erik","0707123456"};
+		ContactBook found = cb.find(searchStrings);
+
+		assertTrue(found.get(0) == c);
+	}
 }
