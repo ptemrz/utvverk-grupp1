@@ -36,21 +36,20 @@ public class ReadFileTest {
 		cb.add(new Contact("Caesar"));
 		cb.add(new Contact("David"));
 	}
-	
-	@Test
-	public void readFileTest() throws FileNotFoundException {
-		/*File f = new File("Contact cb");
-		
-		/**
-		 * Testar om metoden läser korrekta info på filen
-		 * Nadia Hamid
-		 */
-	}
+
+	// @Test
+	// public void readFileTest() throws FileNotFoundException {
+	/*
+	 * File f = new File("Contact cb");
+	 * 
+	 * /** Testar om metoden läser korrekta info på filen Nadia Hamid
+	 */
+
 	@Test
 	public void readFileIsCorrectTest() throws IOException {
 		ContactBook c = new ContactBook();
 		c.addAll(cb);
-		File f = new File ("testfile");
+		File f = new File("testfile");
 		WriteFile.writeToFile(c, "testfile");
 		ReadFile rf = new ReadFile();
 	}
