@@ -1,6 +1,10 @@
 package domaintest;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.time.LocalDate;
 
 import org.junit.jupiter.api.Test;
 
@@ -35,5 +39,19 @@ public class ContactTest {
 		c2.setLastName("Andersson");
 		
 		assertTrue(c1.equals(c2));
+	}
+	
+	@Test
+	public void testSetBirthday() {
+		Contact c = new Contact("Adam");
+		c.setBirthday("1990-01-01");
+		LocalDate birthday = LocalDate.of(1990, 01, 01);
+		assertEquals(birthday, c.getBirthday());
+	}
+	
+	@Test
+	public void testSetBirthdayBadFormat() {
+		Contact c = new Contact("Adam");
+		assertThrows(IllegalArgumentException.class, () -> c.setBirthday("19900101"));
 	}
 }

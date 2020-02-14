@@ -138,7 +138,7 @@ public class ContactBook extends LinkedList<Contact> {
 		}
 		s.close();
 		try {
-			this.remove(i);
+			this.remove(i-1);
 		} catch (IndexOutOfBoundsException e) {
 			System.out.println("ContactBook error");
 		}
@@ -154,7 +154,7 @@ public class ContactBook extends LinkedList<Contact> {
 		StringBuilder sb = new StringBuilder();
 
 		for (int i = 0; i < this.size(); i++) {
-			sb.append(i + ": ");
+			sb.append((i+1) + ": ");
 			for (String field : this.get(i).toStringArray()) {
 				sb.append(field + " ");
 			}
