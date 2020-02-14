@@ -50,6 +50,7 @@ public class ContactBook extends LinkedList<Contact> {
 
 	/**
 	 * Find contacts by multiple search strings<br>
+	 * 
 	 * @see find(String searchString)
 	 * @param searchStrings
 	 * @return
@@ -57,6 +58,9 @@ public class ContactBook extends LinkedList<Contact> {
 	public ContactBook find(String[] searchStrings) {
 		ContactBook cb = new ContactBook();
 		for (String string : searchStrings) {
+			if (string.isEmpty()) {
+				continue;
+			}
 			ContactBook temp = find(string);
 			for (Contact c : temp) {
 				cb.add(c);
