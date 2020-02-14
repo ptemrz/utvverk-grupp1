@@ -109,4 +109,15 @@ public class ContactBookTest {
 
 		assertTrue(found.get(0) == c);
 	}
+	
+	@Test
+	public void testFindNothingByEmptyStrings() {
+		Contact c = new Contact("Erik");
+		c.setNumber("0707123456");
+		cb.add(c);
+		String[] searchStrings = {"",""};
+		ContactBook found = cb.find(searchStrings);
+
+		assertTrue(found.isEmpty());
+	}
 }
