@@ -175,7 +175,7 @@ public class GUI extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 
 		/**
-		 * när man klicka på knappen "Lista" ligger innehåll från kontaktboken till
+		 * när man klicka på knappen "List" ligger innehåll från kontaktboken till
 		 * JTextArea om det finns kontakt annars får man meddelande att bok finns inte 
 		 * samt att man behöver att skapa en ny bok
 		 */
@@ -192,9 +192,10 @@ public class GUI extends JFrame implements ActionListener {
 		}
 
 		/**
-		 * kontakt som vill man leta efter i kontaktboken först behöver man att skriva i
-		 * JTextFiled och sen klicka på knappen "sök" .Om kontakt finns i kontaktboken
-		 * resultatet är skriven iJTextArea, men om där finns inte kontakten i boken får
+		 * 
+		 * för att leta efter en kontakt i boken först behöver man att skriva kontakten i
+		 * JTextFiled och sen klicka på knappen "Search" .Om kontakt finns i kontaktboken
+		 * resultatet är skriven iJTextArea, men om där inte finns kontakten  får
 		 * man meddelande om där finns inte denna kontakt.
 		 *
 		 */
@@ -229,8 +230,8 @@ public class GUI extends JFrame implements ActionListener {
 
 		/**
 		 * Om man vill att lägga till en nya kontakt i boken behöver man att skriva
-		 * denna nya kontakt i JTextFiled och sen klicka på knappen "Lägga till". Om man
-		 * vill se resultat behöver man att klicka knappen "lista" och man kan se i
+		 * denna nya kontakt i JTextFiled och sen klicka på knappen "Create". Om man
+		 * vill se resultat behöver man att klicka knappen "List" och man kan se i
 		 * JTextArea alla kontakter som finns i boken. Den nya kontakten finns också
 		 * där.
 		 */
@@ -268,11 +269,10 @@ public class GUI extends JFrame implements ActionListener {
 		}
 
 		/**
-		 * Om man vill att ta bort en kontakt fron boken behöver man först att skriva
-		 * denna kontakt i JTextFiled och sen klicka på knappen "ta bort". Om man vill
-		 * se resultat behöver man att klicka knappen "lista" och man kan se i JTextArea
-		 * alla kontakter som finns i boken. Denna kontakten som man vill ta bort finns
-		 * inte längre i kontaktboken.
+		 * Om man vill att ta bort en kontakt från boken behöver man först att markera denna kontakt i textArea
+		 * och efter klicka  på knappen "Delet" och klicka knappen "List" att se resultat.
+		 * Denna kontakten som man vill ta bort finns inte längre i kontaktboken.
+		 * 
 		 */
 		if (e.getSource() == taBortB) {
 
