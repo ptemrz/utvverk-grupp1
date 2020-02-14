@@ -39,8 +39,8 @@ public class ReadFileTest {
 	
 	@Test
 	public void readFileTest() throws FileNotFoundException {
-		File f = new File("Contact cb");
-		assertTrue(f.isFile());
+		/*File f = new File("Contact cb");
+		
 		/**
 		 * Testar om metoden läser korrekta info på filen
 		 * Nadia Hamid
