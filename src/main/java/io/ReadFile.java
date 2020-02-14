@@ -17,14 +17,18 @@ public class ReadFile {
 
 	ContactBook cb = new ContactBook();
 
+	public ContactBook readfile() throws IOException {
+		return readfile("Contact cb");
+	}
+	
 	/**
 	 * Nadia H.
 	 * 
 	 * @return
 	 * @throws IOException
 	 */
-	public ContactBook readfile() throws IOException {
-		File file = new File("Contact cb");
+	public ContactBook readfile(String filename) throws IOException {
+		File file = new File(filename);
 		FileReader fr = null;
 		{
 
