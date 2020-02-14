@@ -15,10 +15,6 @@ public class WriteFile {
 	}
 
 	public static void writeToFile(ContactBook cb, String fileName) {
-		
-		if(cb.isEmpty()){
-			return;
-		}
 		BufferedWriter bw = null;
 		File file = new File(fileName);
 
