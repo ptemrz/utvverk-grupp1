@@ -37,7 +37,7 @@ public class ReadFile {
 			} catch (FileNotFoundException e1) {
 				System.out.println("File doesn't exist or is empty");
 			}
-			s = new Scanner(new BufferedReader(new FileReader("Contact cb")));
+			s = new Scanner(new BufferedReader(new FileReader(filename)));
 
 			while (s.hasNextLine()) {
 				String line = s.nextLine();
