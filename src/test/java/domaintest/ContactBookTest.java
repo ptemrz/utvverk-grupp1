@@ -46,7 +46,7 @@ public class ContactBookTest {
 
 	@Test
 	public void testFindMoreThanOne() {
-		Contact c = new Contact("Adam");
+		Contact c = new Contact("Adam2");
 		cb.add(c);
 
 		List<Contact> found;
@@ -89,6 +89,7 @@ public class ContactBookTest {
 		assertEquals(testing, cb.save());
 	}
 
+	@Test
 	public void testFindByPhoneNumber() {
 		Contact c = new Contact("Erik");
 		c.setNumber("0707123456");
@@ -96,5 +97,12 @@ public class ContactBookTest {
 		ContactBook found = cb.find("0707123456");
 
 		assertTrue(found.get(0) == c);
+	}
+	
+	@Test
+	public void testToStringPrintsCompleteInformation() {
+		for(int i = 0; i < cb.size(); i++) {
+			cb.get(i).setTitle(""+(i+10));
+		}		
 	}
 }

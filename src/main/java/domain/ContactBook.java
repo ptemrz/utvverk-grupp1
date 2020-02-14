@@ -1,6 +1,8 @@
 package domain;
 
 import java.io.IOException;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -28,12 +30,24 @@ public class ContactBook extends LinkedList<Contact> {
 		try {
 			WriteFile.writeToFile(this);
 		} catch (Exception e) {
-			System.err.println("failed to add contact");
+			System.err.println("failed to save ContactBook");
 			return false;
 		}
 		return true;
 	}
-
+	
+	/**
+	 * Add which disallows duplicates
+	 */
+	@Override
+	public boolean add(Contact c) {
+		if(this.contains(c)) {
+			return false;
+		} else {
+			return super.add(c);
+		}
+	}
+	
 	/**
 	 * Find contacts by a search string.
 	 * 
@@ -105,7 +119,7 @@ public class ContactBook extends LinkedList<Contact> {
 		try {
 			this.remove(i);
 		} catch (IndexOutOfBoundsException e) {
-			// Do nothing
+			System.out.println("ContactBook error");
 		}
 	}
 
