@@ -2,6 +2,7 @@ package io.test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -38,12 +39,12 @@ public class ReadFileTest {
 	}
 
 	@Test
-	public void ReadFileIsReading() throws IOException {
+	public void ReadFileIsReadingTest() throws IOException {
 		ContactBook a = new ContactBook();
 		WriteFile.writeToFile(a, "test2");
 		ReadFile rf = new ReadFile();
-		a = rf.readfile();
-		assertFalse(a.isEmpty());		
+		a = rf.readfile("test2");
+		assertTrue(a.isEmpty());		
 	}
 
 	@Test
