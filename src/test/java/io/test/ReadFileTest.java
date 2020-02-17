@@ -1,15 +1,15 @@
 package io.test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
-import java.io.BufferedWriter;
+import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -37,20 +37,30 @@ public class ReadFileTest {
 		cb.add(new Contact("David"));
 	}
 
-	// @Test
-	// public void readFileTest() throws FileNotFoundException {
-	/*
-	 * File f = new File("Contact cb");
-	 * 
-	 * /** Testar om metoden läser korrekta info på filen Nadia Hamid
-	 */
+	@Test
+	public void ReadFileIsReading() throws IOException {
+		ContactBook a = new ContactBook();
+		WriteFile.writeToFile(a, "test2");
+		ReadFile rf = new ReadFile();
+		a = rf.readfile();
+		assertFalse(a.isEmpty());		
+	}
 
 	@Test
-	public void readFileIsCorrectTest() throws IOException {
+	public void readFileReadCorrectTest() throws IOException {
+
 		ContactBook c = new ContactBook();
 		c.addAll(cb);
-		File f = new File("testfile");
-		WriteFile.writeToFile(c, "testfile");
+		WriteFile.writeToFile(c, "test2");
 		ReadFile rf = new ReadFile();
+		ContactBook a = rf.readfile("test2");
+		assertEquals(a, c);
+
+	}
+
+	@AfterEach
+	public void deleteFileTest() {
+		File f = new File("test2");
+		f.delete();
 	}
 }
