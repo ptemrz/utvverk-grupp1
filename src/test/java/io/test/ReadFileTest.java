@@ -1,15 +1,11 @@
 package io.test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -23,7 +19,8 @@ public class ReadFileTest {
 	private ContactBook cb;
 
 	/**
-	 * Nadia H. ReadFile tester testar om filen existerar
+	 * @author Nadia H. 
+	 * ReadFile tester testar om filen existerar och den inte är ifylld
 	 * 
 	 * @throws IOException
 	 */
@@ -46,7 +43,11 @@ public class ReadFileTest {
 		a = rf.readfile("test2");
 		assertTrue(a.isEmpty());		
 	}
-
+	
+	/**
+	 * Testar att metoden kan skilja ifrån olika filen 
+	 * @throws IOException
+	 */
 	@Test
 	public void readFileReadCorrectTest() throws IOException {
 
@@ -58,7 +59,9 @@ public class ReadFileTest {
 		assertEquals(a, c);
 
 	}
-
+	/**
+	 * raderar alla onödiga filer
+	 */
 	@AfterEach
 	public void deleteFileTest() {
 		File f = new File("test2");

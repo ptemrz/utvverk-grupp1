@@ -18,7 +18,10 @@ import io.WriteFile;
 
 public class WriteFileTest {
 	private ContactBook cb;
-
+	/**
+	 * @author Nadia H.
+	 * Tester till WriteFile Klass
+	 */
 	@BeforeEach
 	public void init() {
 		cb = new ContactBook();
@@ -28,7 +31,9 @@ public class WriteFileTest {
 		cb.add(new Contact("Caesar"));
 		cb.add(new Contact("David"));
 	}
-
+	/**
+	 * Säkertställer att filen återskapas alltid den INTE finns i systemet
+	 */
 	@Test
 	public void writeToFileTest() {
 		File f = new File("test2");
@@ -36,7 +41,10 @@ public class WriteFileTest {
 		WriteFile.writeToFile(cb, "test2");
 		Assertions.assertTrue(f.exists());
 	}
-
+	/**
+	 * Kontrollera att metoden writeFile skriver med lamplighet
+	 * @throws IOException
+	 */
 	@Test
 	public void writeToFileIsCorrectTest() throws IOException {
 		ContactBook c = new ContactBook();
@@ -45,7 +53,10 @@ public class WriteFileTest {
 		c = rf.readfile("test2");
 		assertEquals(cb, c);
 	}
-
+	/**
+	 * Nästan lika som test ovan men kontrollera istället att metoden kan fatta olika händelser
+	 * @throws IOException
+	 */
 	@Test
 	public void writeToFileWritesCorrectTest() throws IOException {
 		WriteFile.writeToFile(cb, "test2");
@@ -62,7 +73,9 @@ public class WriteFileTest {
 		WriteFile.writeToFile(cb, "test2");
 		assertFalse(cb.isEmpty());
 	}
-
+	/**
+	 * Radera testfilen
+	 */
 	@AfterEach
 	public void deleteFileTest() {
 		File f = new File("test2");
