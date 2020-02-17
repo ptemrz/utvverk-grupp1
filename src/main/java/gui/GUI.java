@@ -33,7 +33,7 @@ public class GUI extends JFrame implements ActionListener {
 	private JPanel panel1 = new JPanel();
 	private JPanel panel2 = new JPanel();
 	private JPanel panel3 = new JPanel();
-	
+
 	private JButton listaB = new JButton("List");
 	private JButton sökB = new JButton("Search");
 	private JButton läggB = new JButton("Create");
@@ -68,11 +68,11 @@ public class GUI extends JFrame implements ActionListener {
 	private JTextField inComment = new JTextField(10);
 	private JTextField inBDay = new JTextField(10);
 
-	// Här man ser resultat efter mak klicka på knappen
-	private JTextArea resultatTA = new JTextArea(50, 50); // 20 rader, 1 kolumn
-	
+	// Här man ser resultat efter man klicka på knappen
+	private JTextArea resultatTA = new JTextArea(50, 50);
+
 	public GUI() {
-		
+
 		inTitle.setBackground(Color.lightGray);
 		inTitle.setPreferredSize(new Dimension(200, 25));
 
@@ -119,22 +119,33 @@ public class GUI extends JFrame implements ActionListener {
 		panel2.setBackground(Color.white);
 		panel3.setLayout(new FlowLayout(FlowLayout.CENTER));
 		panel3.setBackground(Color.white);
-		
-		
-		panel1.setLayout(new GridLayout(12,2));//2 rader 1 kolumn
-		panel1.add(title);  panel1.add(inTitle);
-		panel1.add(name);   panel1.add(inName);
-		panel1.add(mName);  panel1.add(inMname);
-		panel1.add(lName);  panel1.add(inLname);
-		panel1.add(phone);  panel1.add(inPhone);
-		panel1.add(email);  panel1.add(inEmail);
-		panel1.add(street); panel1.add(inStreet);
-		panel1.add(code);   panel1.add(inCode);
-		panel1.add(city);  	panel1.add(inCity);
-		panel1.add(country);panel1.add(inCountry);
-		panel1.add(comment);panel1.add(inComment);
-		panel1.add(bday);   panel1.add(inBDay);
-		
+
+		panel1.setLayout(new GridLayout(12, 2));
+		panel1.add(title);
+		panel1.add(inTitle);
+		panel1.add(name);
+		panel1.add(inName);
+		panel1.add(mName);
+		panel1.add(inMname);
+		panel1.add(lName);
+		panel1.add(inLname);
+		panel1.add(phone);
+		panel1.add(inPhone);
+		panel1.add(email);
+		panel1.add(inEmail);
+		panel1.add(street);
+		panel1.add(inStreet);
+		panel1.add(code);
+		panel1.add(inCode);
+		panel1.add(city);
+		panel1.add(inCity);
+		panel1.add(country);
+		panel1.add(inCountry);
+		panel1.add(comment);
+		panel1.add(inComment);
+		panel1.add(bday);
+		panel1.add(inBDay);
+
 		panel2.add(listaB);
 		panel2.add(sökB);
 		panel2.add(läggB);
@@ -157,7 +168,6 @@ public class GUI extends JFrame implements ActionListener {
 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLayout(new GridLayout(3, 1));
-		// frame.pack();
 		frame.setSize(500, 650);
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
@@ -175,9 +185,9 @@ public class GUI extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 
 		/**
-		 * när man klicka på knappen "List" ligger innehåll från kontaktboken till
-		 * JTextArea om det finns kontakt annars får man meddelande att bok finns inte 
-		 * samt att man behöver att skapa en ny bok
+		 * När man klickar på knappen "List" ligger man innehåll från kontaktboken till
+		 * JTextArea, om det finns en,aannars, får man meddelande att bok finns inte, samt att man behöver att
+		 * skapa en ny bok.
 		 */
 
 		if (e.getSource() == listaB) {
@@ -186,54 +196,53 @@ public class GUI extends JFrame implements ActionListener {
 				if (s == true)
 					resultatTA.setText(cb.toString());
 				else
-					resultatTA.setText("The book does not exist! Create a new book.");				
-				
+					resultatTA.setText("The book does not exist! Create a new book.");
+
 			}
 		}
 
 		/**
 		 * 
-		 * för att leta efter en kontakt i boken först behöver man att skriva kontakten i
-		 * JTextFiled och sen klicka på knappen "Search" .Om kontakt finns i kontaktboken
-		 * resultatet är skriven iJTextArea, men om där inte finns kontakten  får
-		 * man meddelande om där finns inte denna kontakt.
+		 * För att leta efter en kontakt i boken först behöver man att skriva kontakten
+		 * i JTextFiled och sen klickar på knappen "Search" .Om kontakt finns i kontaktboken
+		 * resultatet är skriven i JTextArea, men om där inte finns kontakten får man meddelande att där inte finns denna
+		 * kontakt.
 		 *
 		 */
 		if (e.getSource() == sökB) {
 
 			String titleStr = inTitle.getText();
-			String nameStr = inTitle.getText();	
-			String mNameStr=inMname.getText();
-			String lNameStr=inLname.getText();
-			String phoneStr=inPhone.getText();
-			String emailStr=inEmail.getText();
-			String streetStr=inStreet.getText();
-			String codeStr=inCode.getText();
-			String cityStr=inCity.getText();
-			String countryStr=inCountry.getText();
-			String commentStr=inComment.getText();
-			String bDayStr= inBDay.getText();
-			
-			String[] data= {titleStr,nameStr,mNameStr,lNameStr,phoneStr,emailStr,streetStr,codeStr,cityStr,countryStr,commentStr, bDayStr};
-			
+			String nameStr = inTitle.getText();
+			String mNameStr = inMname.getText();
+			String lNameStr = inLname.getText();
+			String phoneStr = inPhone.getText();
+			String emailStr = inEmail.getText();
+			String streetStr = inStreet.getText();
+			String codeStr = inCode.getText();
+			String cityStr = inCity.getText();
+			String countryStr = inCountry.getText();
+			String commentStr = inComment.getText();
+			String bDayStr = inBDay.getText();
+
+			String[] data = { titleStr, nameStr, mNameStr, lNameStr, phoneStr, emailStr, streetStr, codeStr, cityStr,
+					countryStr, commentStr, bDayStr };
+
 			ContactBook temp = cb.find(data);
 			if (temp.isEmpty()) {
-				resultatTA.setText("The contact is not in the book! " );
-				
-			}else {
+				resultatTA.setText("The contact is not found! ");
+
+			} else {
 				resultatTA.setText(temp.toString());
-				
+
 			}
-			
-		
+
 		}
 
 		/**
 		 * Om man vill att lägga till en nya kontakt i boken behöver man att skriva
-		 * denna nya kontakt i JTextFiled och sen klicka på knappen "Create". Om man
-		 * vill se resultat behöver man att klicka knappen "List" och man kan se i
-		 * JTextArea alla kontakter som finns i boken. Den nya kontakten finns också
-		 * där.
+		 * denna nya kontakt i JTextFiled och sen klickar på knappen "Create". 
+		 * Om man vill se resultat behöver man att klicka knappen "List" och då kan man se i JTextArea
+		 *  alla kontakter som finns i boken. Den nya kontakten finns också där.
 		 */
 		if (e.getSource() == läggB) {
 
@@ -264,14 +273,13 @@ public class GUI extends JFrame implements ActionListener {
 			inCountry.setText(null);
 			inComment.setText(null);
 			inBDay.setText(null);
-			
-			
+
 		}
 
 		/**
-		 * Om man vill att ta bort en kontakt från boken behöver man först att markera denna kontakt i textArea
-		 * och efter klicka  på knappen "Delet" och klicka knappen "List" att se resultat.
-		 * Denna kontakten som man vill ta bort finns inte längre i kontaktboken.
+		 * Om man vill att ta bort en kontakt från boken behöver man först att markera
+		 * denna kontakt i textArea och efter klickar på knappen "Delete". Föra att se resultatet behöver man att
+		 * klicka på knappen "List". Denna kontakten som man vill ta bort finns inte längre i kontaktboken.
 		 * 
 		 */
 		if (e.getSource() == taBortB) {
@@ -330,7 +338,7 @@ public class GUI extends JFrame implements ActionListener {
 	public void setResultatTA(JTextArea resultatTA) {
 		this.resultatTA = resultatTA;
 	}
-	
+
 	public JTextField getInName() {
 		return inName;
 	}
@@ -419,5 +427,5 @@ public class GUI extends JFrame implements ActionListener {
 		this.inBDay = inBDay;
 
 	}
-	
+
 }
