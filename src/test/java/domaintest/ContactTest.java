@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import domain.Contact;
 
+@SuppressWarnings("deprecation")
 public class ContactTest {
 
 	@Test
