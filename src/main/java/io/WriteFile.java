@@ -9,6 +9,10 @@ import domain.Contact;
 import domain.ContactBook;
 
 public class WriteFile {
+	/**
+	 * @author NadiaH.
+	 * @param cb
+	 */
 
 	public static void writeToFile(ContactBook cb) {
 		writeToFile(cb, "Contact cb");

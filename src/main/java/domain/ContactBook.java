@@ -1,8 +1,6 @@
 package domain;
 
 import java.io.IOException;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.Scanner;

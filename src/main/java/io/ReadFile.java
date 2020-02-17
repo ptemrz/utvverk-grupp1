@@ -22,7 +22,7 @@ public class ReadFile {
 	}
 	
 	/**
-	 * Nadia H.
+	 * @author Nadia H.
 	 * 
 	 * @return
 	 * @throws IOException
