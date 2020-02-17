@@ -24,7 +24,10 @@ import domain.Contact;
 import domain.ContactBook;
 
 /**
- * @author danijela här vi bygger vår Swing application
+ * 
+ * här vi bygger vår Swing application
+ * 
+ * @author danijela 
  *
  */
 

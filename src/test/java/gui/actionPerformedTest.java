@@ -33,6 +33,8 @@ public class actionPerformedTest {
 	 * Resultatet sätter vi i en string med hjälp av metoden getText() som hämtat textes som finns i 
 	 * JTextArea. Denna resultat vi jämföra med en string( som innehåller (index: string och nya rad).
 	 * OBS ser metoder toString()  i ContactBook.
+	 *  
+	 * @see domain.ContactBook#String toString()
 	 */
 	
 	@Test
