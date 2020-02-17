@@ -1,0 +1,1089 @@
+commit 135440d04eb3e883c16992ccdf334b78197df197
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Mon Feb 17 14:16:11 2020 +0100
+
+    Javadoc kommentar
+
+commit c6ed420128645c4fbcb2aab74d3f1a508a4bb461
+Merge: 0df573c 897e0a5
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Mon Feb 17 13:42:14 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit 0df573c6130253a5edff42b2a35dd94ad6988c96
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Mon Feb 17 13:42:09 2020 +0100
+
+    kommentar
+
+commit 897e0a5fd3484eb1b4996c670886793a15124504
+Merge: fc11cf2 156828e
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Mon Feb 17 11:55:08 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit 156828ee090aa4cb31e44bedd5a0df48f783c9e5
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Mon Feb 17 11:53:57 2020 +0100
+
+    suppress warnings for testing
+
+commit fc11cf2884454c1d94432e675330e5ebf6f40f79
+Merge: 49d109b e8d25d6
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Mon Feb 17 11:53:53 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit 49d109b907a6512f80ce4b8ad736c04c0ae1b7ba
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Mon Feb 17 11:53:48 2020 +0100
+
+    Addera kommentär till metoderna
+
+commit e8d25d6ac0ec8e06b42412faab2685f2fce5c37f
+Merge: 3cce992 d12055f
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Mon Feb 17 11:46:30 2020 +0100
+
+    Merge branch 'master' of github.com:ptemrz/utvverk-grupp1
+
+commit 3cce9929ae501639032d61af11ef8315c3c51e79
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Mon Feb 17 11:42:06 2020 +0100
+
+    organize imports
+
+commit d12055f45ebd0a5a20e211fdbcf41abe2618994c
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Mon Feb 17 11:25:27 2020 +0100
+
+    Korrigera ReadFileIsReadingTest metod
+
+commit 688d4fbf46c78d773ffa288f496d4a54bc041ace
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Mon Feb 17 11:17:08 2020 +0100
+
+    ReadFile & WriteFile Tester implementerad
+
+commit d70b54ec928f97051adaf802d4bf95a7e54a9a18
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Mon Feb 17 11:16:31 2020 +0100
+
+    remove testfile
+
+commit 215f426d175155067d60aa8792fcde68ccaa69b2
+Merge: 3d167be 5c02442
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 14 13:59:39 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit 3d167be70dcf29733ac3cab5d6921b1fe04cc52f
+Merge: fffa685 472944f
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 14 13:58:39 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit 5c024427c3ee91e03ad3fb514474f60ab61c7c00
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 13:58:37 2020 +0100
+
+    Fix a typo
+
+commit 472944f667fcd71c12f619d1c4e13242845ffabd
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 13:57:40 2020 +0100
+
+    Reformat the code
+
+commit fffa685f3f196f6045937be4c7f447aa83980488
+Merge: bf46144 bf3970c
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 14 13:57:39 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit bf46144e507f03bb6255672f0f71a646892ead8f
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 14 13:56:24 2020 +0100
+
+    ändring i tester
+
+commit bf3970cc323479410589416cb1f136ca868a4a3a
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 13:56:05 2020 +0100
+
+    Fix a bug where the filename would be overridden
+
+commit ecaea46357f48217003768614108ab9af17e7b51
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 14 13:51:09 2020 +0100
+
+    ReadFile Test
+
+commit 7334504ab1a54ec1d781b6d761546d929afd4578
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 14 13:45:38 2020 +0100
+
+    WriteFile ändring
+
+commit 5d892c0d4b35d54e9975d239f4a8b8b7acfcb724
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 14 13:43:12 2020 +0100
+
+    ändring i writeFile
+
+commit 691b3478c78d26165eae4a94871b4110f9ad8b71
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 13:40:27 2020 +0100
+
+    change a method to read from a test file instead of Contact cb
+
+commit d902cb90ddad35016d614cf0f7a41c97cb7b1845
+Merge: 2f6505c 7668340
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 13:38:52 2020 +0100
+
+    Merge branch 'master' of github.com:ptemrz/utvverk-grupp1
+
+commit 2f6505cb097d4f44185a77359d4da9ae2b0211b6
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 13:38:41 2020 +0100
+
+    Generalize readfile() for different filenames
+
+commit 766834063364a3565e4c1ca391add1fd2c4cf47a
+Merge: d2b4a29 8f94283
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 14 13:02:44 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit d2b4a29d8d539bb727a0a3088ba333a3b0632e23
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 14 13:02:39 2020 +0100
+
+    andring kommentar
+
+commit 8f94283cdd78dfda8feaa0a08c09e806154032de
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 13:00:39 2020 +0100
+
+    update readme
+
+commit dda33b5052b4827b814f447e921fd1c73f362dce
+Merge: 2ca6f41 0cc5aa0
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 12:48:47 2020 +0100
+
+    Merge branch 'master' of github.com:ptemrz/utvverk-grupp1
+
+commit 0cc5aa02b1f402d8feb8cb07c20b0284d08cca51
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 14 12:44:53 2020 +0100
+
+    Junit
+
+commit 2ca6f4141c4154defde67f5fe3aa3b9a34a0fd40
+Merge: d974337 e070b76
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 12:40:58 2020 +0100
+
+    Merge branch 'master' of git@github.com:ptemrz/utvverk-grupp1.git
+
+commit d97433735f2b02764cf3a5f50c165d6019c62cc3
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 12:39:31 2020 +0100
+
+    Update readme
+
+commit e070b76db85f29cf31c97e83b42ee1d5ce6e6185
+Merge: d5dbf0c 6a7cf85
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 14 12:29:44 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit d5dbf0c8989f1683994ef703ab59f63e80c61e2c
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 14 12:29:40 2020 +0100
+
+     engelska, data format
+
+commit 6a7cf85c8e85f27aec1bdcf396a20d83f302f4c2
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 12:27:56 2020 +0100
+
+    count contacts from 1 instead of 0
+
+commit 1f7b9fe6315ad897c83857467a5dfeafd152c3cf
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 14 12:25:32 2020 +0100
+
+    JunitTest
+
+commit 4501522629ef3988d5716911311dc8c0d59ea5a4
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 12:12:52 2020 +0100
+
+    test setBirthday
+
+commit daef7a253d44b8e493dc66e2eb26ffa01e30ebe8
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 12:12:01 2020 +0100
+
+    don't set the birthday if argument equals "null"
+
+commit a5f410cbe215d7ec97838759068510202954e27f
+Merge: 33257a1 2142d3c
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 12:01:47 2020 +0100
+
+    Merge branch 'master' of github.com:ptemrz/utvverk-grupp1
+
+commit 33257a16ead8f6198edfc6699465128f38402e54
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 12:01:23 2020 +0100
+
+    Fix some potential bugs in setBirthday(String)
+
+commit 2142d3c4658aa405a4fa369b20be1334a9443fcf
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 14 11:57:22 2020 +0100
+
+    fixing birthday
+
+commit 94d3150842c661c791ac247a3c8f6da03b6ccdcb
+Merge: 26ed5ac b69a864
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 11:52:18 2020 +0100
+
+    Merge branch 'master' of github.com:ptemrz/utvverk-grupp1
+
+commit 26ed5ac11bb6b41323e10973e0c5e5a0196c2c20
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 11:51:58 2020 +0100
+
+    add method for setting a birthday by a string
+
+commit b69a864948c14162398bdd034319bb554d5f8632
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 14 11:47:26 2020 +0100
+
+    bDay aktivate
+
+commit 204a92890da430883fb79c21fb1a35e1f1297b14
+Merge: e5ad710 6ef8228
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 11:45:45 2020 +0100
+
+    Merge branch 'master' of github.com:ptemrz/utvverk-grupp1
+
+commit e5ad710ac024100c50813e29d8cefea40069fabe
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 11:45:23 2020 +0100
+
+    add a test for the find methods
+
+commit 6ef8228dcfb9c0409f7b057f59b5f3a08f7f4ef4
+Merge: e85e5a5 a7f060c
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 14 11:41:13 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit e85e5a5fd767c64006539d79f0387191bc90298e
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 14 11:41:08 2020 +0100
+
+    JUnit test GUI
+
+commit a7f060cca1780cbaf31a5a99b60a9df0c8aab3ce
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 11:40:00 2020 +0100
+
+    Fix bug in find method where an empty string would return all contacts
+
+commit da1df90049c7685e41070a8e5bd49c212d734954
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 14 11:36:48 2020 +0100
+
+    sök
+
+commit 29841a7636972ad1879b6fc909217dec8c14c673
+Merge: e4b9c15 427f4fc
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 14 11:20:12 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit e4b9c15cdd4f0ca61ec4e0f144c3c5250b3ae40b
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 14 11:20:04 2020 +0100
+
+    andring i sök
+
+commit 427f4fc110535043f6ff60fde4b5240256cbe5de
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 11:19:35 2020 +0100
+
+    add find method for multiple search strings
+
+commit 24c752714f2aa108d0a87c1a6e718cf7bd6cbfce
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 11:13:48 2020 +0100
+
+    Remove a bad test
+
+commit 0a73fd23881b577979be46bdc8a51f397397d42f
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 14 11:11:05 2020 +0100
+
+    Disallow duplicate contacts
+
+commit f892811372bd132a2be38f4caa9e8d7cfd98a275
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 14 10:41:20 2020 +0100
+
+    Optimering i WriteFile
+
+commit 9e7a6f57644235be26e87d56c180a645797d0e39
+Merge: a473657 dbd9959
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 14 10:29:35 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit a47365718e1fbe095227c5265056bedc88e17d1f
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 14 10:29:25 2020 +0100
+
+    BugFix readFile
+
+commit dbd9959048581223b9260d91bbed597e76256a8a
+Merge: d2f7144 befab6f
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 14 10:23:24 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit d2f714483046efe2d504575714a702b3140a38b3
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 14 10:22:37 2020 +0100
+
+    ta bort inf om contact from formular
+
+commit befab6fa17e678748578c92d6c115d16fc2af644
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 14 10:22:30 2020 +0100
+
+    Bugfix i WriteFile
+
+commit 32dd15426cbb8da06e985d16220a971e5efb1036
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 14 09:41:57 2020 +0100
+
+    Test implementering GUI
+
+commit bb6a42fab627c372fbc52237b55dd4ccc971c3df
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Thu Feb 13 18:20:29 2020 +0100
+
+    GUI implement
+
+commit 274c8f65819fb54bd72000d5096e04b29d5c52d7
+Merge: d3c61c0 a2bbde3
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Wed Feb 12 17:34:28 2020 +0100
+
+    WriteFile Test 2 Implement
+
+commit d3c61c0dcf4e242428cf3f2e31f6353fa6ab119a
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Wed Feb 12 17:33:44 2020 +0100
+
+    WriteFile test2 implement
+
+commit a2bbde31fff24746ac27bb03310a0fb3a15082be
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Wed Feb 12 15:31:17 2020 +0100
+
+    Remove testfile from git
+
+commit 90e481f4df21b3ed7a3fbda3b80272738920b970
+Merge: 974bb5d 33c1d61
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Wed Feb 12 15:29:30 2020 +0100
+
+    ReadFile tester implement2
+
+commit 974bb5d69699a11e6b17c289748ed5f62928917a
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Wed Feb 12 15:27:56 2020 +0100
+
+    ReadFile Tester implementering
+
+commit 33c1d61892aec58603d9c9c4cedad000b06b5fb7
+Merge: 139eefd 1fd938c
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Wed Feb 12 15:23:11 2020 +0100
+
+    saveTest i contactbook
+
+commit 139eefd3f6fcd04bbc33d3622305c5389f381ef9
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Wed Feb 12 15:17:39 2020 +0100
+
+    saveTest i contactbook
+
+commit 1fd938ca325f9c73ecba2d5b237d107a010c8e0c
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Wed Feb 12 15:16:58 2020 +0100
+
+    Fix a typo in the javadoc
+
+commit 1419c6a2aa69d4c8d76a50d8da17113c1f314bfb
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Wed Feb 12 15:13:38 2020 +0100
+
+    Fix a bug where save() would always return true
+
+commit f8a0033596e87121dc0a7726ad009eae6dec12bc
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Wed Feb 12 15:08:28 2020 +0100
+
+    Add javadoc comments
+
+commit aa5f9709f431b31545f35f0c3381543d6922620a
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Wed Feb 12 14:43:46 2020 +0100
+
+    Add test for the find method
+
+commit 97e2ae8782aeff63588c976f757443a32d6bf761
+Merge: a76c7c4 a317cec
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Wed Feb 12 14:25:51 2020 +0100
+
+    Merge branch 'master' of github.com:ptemrz/utvverk-grupp1
+
+commit a76c7c43adc3674a671f9ac194c9cf32079631e5
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Wed Feb 12 14:25:45 2020 +0100
+
+    Add test for equals method
+
+commit a317ceca149a2214b83c41d560acd89a1e0f6755
+Merge: bcd52ab 27800c1
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Wed Feb 12 14:22:12 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit bcd52ab8a8aaf186d62ea1cbe294fd910b343bbe
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Wed Feb 12 14:22:06 2020 +0100
+
+    nya JUnit tester for GUI
+
+commit 27800c12d0ff85fd160f9576f913dff4911c673e
+Merge: 1ffd375 3a90014
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Wed Feb 12 14:19:33 2020 +0100
+
+    Merge branch 'master' of github.com:ptemrz/utvverk-grupp1
+
+commit 1ffd375435931e3786d342e5e0ec93ce304c943f
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Wed Feb 12 14:19:22 2020 +0100
+
+    Add a test
+
+commit 567780e37f347365c7d5912757fb93b621340c3b
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Wed Feb 12 14:19:04 2020 +0100
+
+    Catch exception in find(String) method
+
+commit 3a900148b6b4dfb5367c1f852c1957ead16f0d41
+Merge: 49dccc3 9c5aa13
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Wed Feb 12 14:07:06 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit 49dccc3c4003c71cadce4733f8b01e4ed1a8011f
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Wed Feb 12 14:06:59 2020 +0100
+
+    spela med kombination
+
+commit 9c5aa13e06b9450cafaa65d53c4f00d7b8a30d23
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Wed Feb 12 14:05:27 2020 +0100
+
+    myDumbMistake
+
+commit 36264318e4935f22011f6b39f6d2dfdbead590d0
+Merge: c58363b 4a955ab
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Wed Feb 12 13:39:04 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit c58363b34b43cb603de1d503b42cf36bd175dbcf
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Wed Feb 12 13:38:59 2020 +0100
+
+    lista
+
+commit 4a955ab0530405d6aee615083d59d1cdbedf1a5d
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Wed Feb 12 13:24:24 2020 +0100
+
+    Revert "Explicitly catch a FileNotFoundException in the loadContactsFromFile method"
+    
+    This reverts commit f8935168a047e51ebe49d527fdda23fb636233ec.
+    
+    This catch-clause actually did nothing. The stack trace came from elsewhere.
+
+commit f8935168a047e51ebe49d527fdda23fb636233ec
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Wed Feb 12 13:21:59 2020 +0100
+
+    Explicitly catch a FileNotFoundException in the loadContactsFromFile method
+
+commit d9823e7916be1cffde10367455a540dbd5474cea
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Wed Feb 12 13:17:08 2020 +0100
+
+    Deprecate the default constructor
+
+commit 04c1139aa0f819f0d513cd7e1b5af3ec839d0ba2
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Wed Feb 12 13:10:38 2020 +0100
+
+    något
+
+commit 15aaf4054da5698f57edbc65bec2b306f9b2202c
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Tue Feb 11 11:39:58 2020 +0100
+
+    Untrack Contact cb
+
+commit dbadb9fba835ac6f3f9542144dc3624af37b58f1
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Tue Feb 11 11:30:49 2020 +0100
+
+    WriteFile imp
+
+commit cd3fd666b2a3cd7c51ecfcebe006a3878ad62a2c
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Tue Feb 11 11:11:11 2020 +0100
+
+    Update gitignore
+
+commit c690cf204cfdc34f9d0cdaeff3c592999b081710
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Tue Feb 11 11:06:50 2020 +0100
+
+    Add Contact cb to gitignore
+
+commit 421ed558dbdc87d26dd4aac99b02a6965fa31616
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Tue Feb 11 11:01:14 2020 +0100
+
+    Fix a bug where toString method would generate duplicate index values
+
+commit 3682460d8c9791c526af7bc0f5d8c2b02c5f76c4
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Tue Feb 11 10:54:24 2020 +0100
+
+    ReadFile korrigering
+
+commit 439215645d4094bb243a6f34a8aa97224b3f04c9
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Tue Feb 11 10:48:46 2020 +0100
+
+    Remove autosaving
+
+commit e6cb85a6de9bc49300b0ac8a6236a638c1def776
+Merge: 56ab2c1 151734a
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Tue Feb 11 10:22:13 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit 56ab2c11adeee2dadaace4c90f846051e90865f2
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Tue Feb 11 10:22:05 2020 +0100
+
+    WriteFile korrigering
+
+commit 151734ae5169fe1d140d67ce268724bcecb8553b
+Merge: 0e62dde 4f46483
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Tue Feb 11 10:05:05 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit 0e62ddeb4daef181b486bbfb670447d1bb05b673
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Tue Feb 11 10:04:59 2020 +0100
+
+    inget viktig
+
+commit 4f46483c48bee4eb71130cc82d7bf5c6e4653078
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Tue Feb 11 09:58:38 2020 +0100
+
+    Remove main-method which was only for debugging
+
+commit fb81b09d42e399c9bd0699c3012b9dee8359e465
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Tue Feb 11 09:52:37 2020 +0100
+
+    Disable loading duplicate contact entries
+
+commit c2285d767b3b3a9bc1e168cc960903c02aa09d77
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Tue Feb 11 09:37:23 2020 +0100
+
+    Add autosaving feature
+
+commit be6cedcabedcd2930fce5f1c2cfe0e58a1bb66b3
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Mon Feb 10 13:40:23 2020 +0100
+
+    enhetsTest ReadFile
+
+commit 9f9062d4e5ff94f845c4a8af45ce7beb51a29831
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Mon Feb 10 12:25:32 2020 +0100
+
+    Organize imports
+
+commit c587487d2a7c1fb65fe96abe4df1ef3cf0cab928
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Mon Feb 10 12:24:46 2020 +0100
+
+    Add tests for the comparing methods
+
+commit b50ba8d6b6c0814e71df55c26025dcda8a60ab27
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Mon Feb 10 12:22:54 2020 +0100
+
+    Implement an equals method
+
+commit 01580394341e4103c6c9f15f36bdcae34c5f979f
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Mon Feb 10 12:22:18 2020 +0100
+
+    Fix a bug with the equals method
+
+commit 5ad3d875be10acafa105d4de7c0177874dbe1b00
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Mon Feb 10 11:39:43 2020 +0100
+
+    Add more tests
+
+commit 87065d3b438b3ab8996b4e176f3367cc95e26312
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Sun Feb 9 23:15:15 2020 +0100
+
+    Add method for loading contacts from a file into an existing ContactBook
+
+commit 932e51f27f33be8195eebc363a5290b59030e228
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Sun Feb 9 22:52:25 2020 +0100
+
+    Autoformat
+
+commit 26ef3341b4da3f50eeb006d0c8a05db6d518748b
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Sun Feb 9 22:51:59 2020 +0100
+
+    Add test for remove(String) method
+
+commit 07262395348819b1576a55dafd52caffd5b36ad0
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Sun Feb 9 22:49:58 2020 +0100
+
+    Improve grammar (suggestion, feel free to revert)
+
+commit 445269c8350816d9d0c812d539651a0120c6ad21
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Sun Feb 9 22:06:26 2020 +0100
+
+    Organize imports
+
+commit 4be2995eeb3953dc04d5fa8cc7011c20f3e7ec93
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Sun Feb 9 12:34:55 2020 +0100
+
+    pom.xml
+
+commit 6f209a1254d5ed019ce95b25597423e1e2da7b76
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Sun Feb 9 12:30:50 2020 +0100
+
+    plugins jar
+
+commit e79caa3be7a60eddf2d0af47424b05db60bbe820
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Sun Feb 9 12:06:41 2020 +0100
+
+    testa jenkins
+
+commit 5bd3a4ab8b28607508be31080597edf02aa2785a
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Sun Feb 9 10:40:48 2020 +0100
+
+    readMe file-instruktion
+
+commit b12aa4e92d1aaa4bc821b98257c8f711b09ad4a5
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Sat Feb 8 19:54:19 2020 +0100
+
+    kommentar
+
+commit b3ba3fc5e2946fb573d16d79e164e776b2994392
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Sat Feb 8 18:02:11 2020 +0100
+
+    javadoc
+
+commit a196d6e229fb503d00864138dbb20761b82ed36a
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Sat Feb 8 17:56:00 2020 +0100
+
+    sista tester actionPerformed
+
+commit 130f0bbe8cf03c7f267073546681ad811217e868
+Merge: f1659e9 3c0e54f
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Sat Feb 8 16:42:41 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit f1659e9e6976b012f5cb1b33b54918df25c45dda
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Sat Feb 8 16:42:35 2020 +0100
+
+    tester
+
+commit 3c0e54f7510c889c91021a4276dbf63e2f10c217
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 7 16:25:36 2020 +0100
+
+    tester WriteFile
+
+commit 4b1fc40d8ff8a9f12825c5c1a3a698ae52e090b1
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 7 14:00:23 2020 +0100
+
+    meddelamde
+
+commit 502249e54b8181e137288e30e16945285b07ec5c
+Merge: b1b7061 ed75a07
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 7 13:48:28 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit b1b7061a18f8ee2831a5243e54828b6dd89df58a
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 7 13:48:20 2020 +0100
+
+    medelande om där finns inte person
+
+commit ed75a07dbed81cfcd7e89f4880313661045bc614
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 13:39:25 2020 +0100
+
+    Override equals method
+
+commit 04dd816761330cdcf051667f4111e5dc827477fd
+Merge: 2e9b6b4 c148a64
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 13:23:13 2020 +0100
+
+    Merge branch 'master' of git@github.com:ptemrz/utvverk-grupp1.git
+
+commit 2e9b6b4f1a8a1d7c765b13c74de67c6a42efebd4
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 13:22:55 2020 +0100
+
+    Change return type of the find method to ContactBook
+
+commit c148a640ed6d5c1f22e006b17ccb2c336b2e4709
+Merge: 9ba3f7f 4ecf53a
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 7 13:16:39 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit 9ba3f7fddd0c68529cf347e0d1bfac39e673faca
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 7 13:16:35 2020 +0100
+
+    ReadFile implementering
+
+commit 4ecf53a831c2263fd31af30f2e752fe0aa2cb9b1
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 13:13:38 2020 +0100
+
+    Fix bug where the remove method would throw an inputmismatch exception
+
+commit e58f9750c77344fc060ae06a4470a7c26a211d7b
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 13:10:05 2020 +0100
+
+    Add method to remove a contact by an indexed string argument
+
+commit aedd79ca42de5b750ddd1dd71317eb2896db32c6
+Merge: 3d026eb 7124108
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 13:03:42 2020 +0100
+
+    Merge branch 'master' of git@github.com:ptemrz/utvverk-grupp1.git
+
+commit 3d026eb1cca37b9254ad23ea8c9565f7ff98ec57
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 13:02:23 2020 +0100
+
+    Change toString method to show contact numbers
+
+commit 71241088bc00f822dd44d3c58f4c14f113dc6eb8
+Merge: b034c76 905845b
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 7 13:01:55 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit b034c763ec5df993b3d795e3188fb51e1345f286
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 7 13:01:45 2020 +0100
+
+    addera
+
+commit 905845b384ecd1efe98c8d1c24e82cade61d8e50
+Merge: 7623925 6c6ec56
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 7 12:34:15 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit 7623925c14c3e214f10d120a69308d44389ecb2c
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 7 12:34:10 2020 +0100
+
+    WriteFile med Contact c
+
+commit 6c6ec561b3fafed4c0e0c360dd8509cf9f64f756
+Merge: 01baa22 0294f66
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 7 12:13:53 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit 01baa229aeae95a7a5d47c24d987533b6cf6e562
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Fri Feb 7 12:13:48 2020 +0100
+
+    actionPerfTest
+
+commit 0294f66e16d9d22d96767db9a338df012b42627d
+Merge: ce2f290 e81904a
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 7 11:44:29 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit e81904aaa4e98325a69419f3f784e183c54ab4b4
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 11:44:00 2020 +0100
+
+    Add javadoc
+
+commit ce2f2905a91105c5f4f38cbf9de57a226d4f0a2e
+Merge: 8386684 e866087
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 7 11:43:53 2020 +0100
+
+    Merge branch 'master' of https://github.com/ptemrz/utvverk-grupp1
+
+commit 83866843bbf961fafdd6ee40ca4661093f172d7b
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 7 11:43:47 2020 +0100
+
+    WriteFile&readFile implementation
+
+commit e866087ebd888f645973542ff122433c6f18cbf0
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 11:15:49 2020 +0100
+
+    Make contacts comparable
+
+commit 111a521ae9be228391a222ae69d2ae6fd8f3d698
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 11:01:36 2020 +0100
+
+    Add temporary main method
+
+commit 37b6cf8a47745dbbc84a762f9eeb40e58625771c
+Merge: 5839278 c621c7a
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 10:40:11 2020 +0100
+
+    Merge branch 'master' of github.com:ptemrz/utvverk-grupp1
+
+commit 5839278fb890b2da011be5eb08ada3bad8b92e89
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 10:39:47 2020 +0100
+
+    test contactBook
+
+commit 3053c2c985433064d75dec1015468250c7a45d65
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 10:35:59 2020 +0100
+
+    Add toString
+
+commit c621c7ab06502adeb4b0ddc179d5a447de975624
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 7 10:34:36 2020 +0100
+
+    WriteFileTest
+
+commit ff2064c7b04e121fe40b527bc0bac96022728ca8
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 10:06:46 2020 +0100
+
+    Test the find() method
+
+commit f76c10aa96c00b868b2d4986619f4589106790ba
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 10:06:28 2020 +0100
+
+    Fix a bug where toStringArray would return null-pointers
+
+commit 4874cbf9b807e576bc7859256d397ccb319ee648
+Merge: 816729e cea3ea9
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 09:45:43 2020 +0100
+
+    Merge branch 'master' of git@github.com:ptemrz/utvverk-grupp1.git
+
+commit 816729ee49f59646e97c39ac06a6ddd4d78fd04a
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 09:45:27 2020 +0100
+
+    Add a search algorithm
+
+commit d9ce017aeff785bf7d787c06499cda3df1310453
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 09:42:11 2020 +0100
+
+    Add toStringArray() method
+
+commit cea3ea9b087bc9d3d1b0b0094f304c4a567fb089
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 7 09:28:44 2020 +0100
+
+    ReadFile implemented
+
+commit 98292e4f7f16641876a8acd6beead6d340ae28c3
+Author: Nadia-Hamid <56875847+Nadia-Hamid@users.noreply.github.com>
+Date:   Fri Feb 7 09:26:13 2020 +0100
+
+    ReadFile&WriteFile
+
+commit 5ddd23a8edce0af95a7f319ce14ddb1172f7ce72
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 09:18:24 2020 +0100
+
+    Add default constructor
+
+commit 1a5a84a57512efa553d92e2fcac20d0a6e1fa099
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Fri Feb 7 09:15:09 2020 +0100
+
+    Generate POJO
+
+commit d142567c4ad2df9763b34c55aea45f2b677939e9
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Thu Feb 6 14:28:28 2020 +0100
+
+    Add fields
+
+commit 907fff6c7d8c5c5477bd2b424c64c5db85f967fb
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Thu Feb 6 14:17:08 2020 +0100
+
+    Implement the contact book as a linked list
+
+commit 4cc61a4ec18706126079f31ffaa5e682ea831a98
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Wed Feb 5 10:34:08 2020 +0100
+
+    main metod och GUI
+
+commit 5c6018dc98dfd55244d4ec8b8cec0b098e5d66e5
+Merge: 0b7ee07 49b3491
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Tue Feb 4 11:45:39 2020 +0100
+
+    Merge branch 'master' of github.com:ptemrz/utvverk-grupp1
+
+commit 0b7ee07538c37b5bd7ea7890055caf6c38be35e6
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Tue Feb 4 11:45:25 2020 +0100
+
+    Switch to JUnit 5
+
+commit 49b3491b17cf4e5e39b83d0f8ca6b8e5f4303d4d
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Tue Feb 4 11:39:55 2020 +0100
+
+    addera gui och main package
+
+commit 9eb5e89d1d75db32ba4bf018e2cce4362b964653
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Tue Feb 4 11:25:00 2020 +0100
+
+    Change project structure
+
+commit 6981008bf295f3278d69c1991a77413ba1bb1fc0
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Tue Feb 4 11:21:30 2020 +0100
+
+    Update project structure, add contact classes
+
+commit d63d93c7ece97459ba68ae53812c12db013c5fec
+Author: Daniljela <daijela.blace@gmail.com>
+Date:   Tue Feb 4 11:11:45 2020 +0100
+
+    raderar app
+
+commit a0c3fc4d0b008e492dc0194a6d46558d32261d42
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Tue Feb 4 11:01:44 2020 +0100
+
+    Set java version 1.8
+
+commit e1ce7f2fef4f00771af6ab71cb851021c5be4dfd
+Author: Peter Mrazek <56875892+ptemrz@users.noreply.github.com>
+Date:   Tue Feb 4 11:00:05 2020 +0100
+
+    Add maven archetype and eclipse project
+
+commit 15f4db9fd1472b167c169c981c87afdca863b04c
+Author: ptemrz <56875892+ptemrz@users.noreply.github.com>
+Date:   Tue Feb 4 10:40:23 2020 +0100
+
+    Initial commit
