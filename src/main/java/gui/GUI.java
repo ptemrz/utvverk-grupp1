@@ -188,6 +188,7 @@ public class GUI extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 
 		/**
+		 * @author Danijela
 		 * När man klickar på knappen "List" ligger man innehåll från kontaktboken till
 		 * JTextArea, om det finns en,aannars, får man meddelande att bok finns inte, samt att man behöver att
 		 * skapa en ny bok.
@@ -205,6 +206,8 @@ public class GUI extends JFrame implements ActionListener {
 		}
 
 		/**
+		 * 
+		 * @author danijela 
 		 * 
 		 * För att leta efter en kontakt i boken först behöver man att skriva kontakten
 		 * i JTextFiled och sen klickar på knappen "Search" .Om kontakt finns i kontaktboken
@@ -242,6 +245,8 @@ public class GUI extends JFrame implements ActionListener {
 		}
 
 		/**
+		 * @author danijela 
+		 * 
 		 * Om man vill att lägga till en nya kontakt i boken behöver man att skriva
 		 * denna nya kontakt i JTextFiled och sen klickar på knappen "Create". 
 		 * Om man vill se resultat behöver man att klicka knappen "List" och då kan man se i JTextArea
@@ -280,6 +285,8 @@ public class GUI extends JFrame implements ActionListener {
 		}
 
 		/**
+		 * @author danijela 
+		 * 
 		 * Om man vill att ta bort en kontakt från boken behöver man först att markera
 		 * denna kontakt i textArea och efter klickar på knappen "Delete". Föra att se resultatet behöver man att
 		 * klicka på knappen "List". Denna kontakten som man vill ta bort finns inte längre i kontaktboken.
